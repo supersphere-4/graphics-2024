@@ -1,25 +1,48 @@
-import logo from './logo.svg';
 import './App.css';
+import teams from './data/teams.json';
+import runnerinfo from './data/runnerinfo.json';
+import MainStream from './MainStream';
+import Stream from './Stream';
+import Teams from './Team';
+import { useEffect, useState } from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+function App(props) {
+
+    const [time, setTime] = useState(0);
+    const [runtime, setRunTime] = useState(new Date());
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setTime(prevTime => prevTime + 1);
+        }, 10000);
+
+        return () => {
+            clearInterval(interval);
+        };
+    }, [time])
+
+    return (
+        <Container fluid>
+            <Row>
+                <Col s xl={3}>
+                    <Teams teams={teams} runners={runnerinfo}></Teams>
+                </Col>
+                <Col s xl={2}>
+                    <Stream teams={teams} runners={runnerinfo} main={time % 5 + 1}/>
+                </Col>
+                <Col xl="auto">
+                    <MainStream teams={teams} runners={runnerinfo} main={time % 5 + 1}/>
+                </Col>
+            </Row>
+            <Row>
+                
+            </Row>
+        </Container>
+        
+    );
 }
 
 export default App;

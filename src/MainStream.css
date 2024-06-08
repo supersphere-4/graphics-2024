@@ -1,0 +1,5 @@
+.main-stream {
+    display: flex;
+    border: black;
+    border-width: 3rem;
+}

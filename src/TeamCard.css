@@ -1,0 +1,36 @@
+.team-card {
+    vertical-align: baseline;
+    width: 100%;
+    height: 100%;
+    font-size: larger;
+    text-shadow: 1px 1px 2px black;
+    color:white !important;
+    border: 3cm black;
+    border-radius: 4rem;
+}
+
+#indigo {
+    background: indigo !important;
+}
+
+#purple {
+    background: purple !important;
+}
+
+#green {
+    background: limegreen !important;
+}
+
+#blue {
+    background: blue !important;
+}
+
+#magenta {
+    background: magenta !important;
+}
+
+#sub-stream {
+    outline: black;
+    outline-width: 2.5rem;
+}
+

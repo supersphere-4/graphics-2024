@@ -1,0 +1,321 @@
+[
+
+    {
+        "name":"Wake Me Up Before You Indigo-go",
+        "number":1,
+        "color":"indigo",
+        "order":
+        [
+            ["Spyro the Dragon","Bregermann"],
+            ["Donkey Kong 64","CornCobx0"],
+            ["Crash Bandicoot 2","Tom_TJ"],
+            ["Banjo-Kazooie","arex_sanx"],
+            ["Super Mario Galaxy 2","swagh007"],
+            ["Crash Bandicoot","imainlessin"],
+            ["Spyro 2: Ripto's Rage!","zacharylawrence"],
+            ["Super Mario 64","Odme_"],
+            ["Banjo-Tooie","zacharylawrence"],
+            ["Spyro: Year of the Dragon","imainlessin"],
+            ["Super Mario Galaxy","Galaxtic"],
+            ["Super Mario Sunshine","Odme_"],
+            ["Crash Bandicoot: WARPED","Bregermann"]
+        ],
+        "finished":0,
+        "start":[
+            "2024-06-21 23:00:00 UTC",
+            "2024-06-22 00:52:32 UTC",
+            "2024-06-22 06:42:11 UTC",
+            "2024-06-22 07:57:45 UTC",
+            "2024-06-22 10:06:48 UTC",
+            "2024-06-22 20:20:44 UTC",
+            "2024-06-22 21:32:33 UTC",
+            "2024-06-22 23:07:22 UTC",
+            "2024-06-23 00:48:12 UTC",
+            "2024-06-23 06:05:59 UTC",
+            "2024-06-23 09:55:18 UTC",
+            "2024-06-23 12:54:55 UTC",
+            "2024-06-23 18:23:13 UTC"
+        ],
+        "end":[
+            "2024-06-22 00:52:32 UTC",
+            "2024-06-22 06:42:11 UTC",
+            "2024-06-22 07:57:45 UTC",
+            "2024-06-22 10:06:48 UTC",
+            "2024-06-22 20:20:44 UTC",
+            "2024-06-22 21:32:33 UTC",
+            "2024-06-22 23:07:22 UTC",
+            "2024-06-23 00:48:12 UTC",
+            "2024-06-23 06:05:59 UTC",
+            "2024-06-23 09:55:18 UTC",
+            "2024-06-23 12:54:55 UTC",
+            "2024-06-23 18:23:13 UTC",
+            "2024-06-23 21:08:41 UTC"
+        ],
+        "starttest":[
+            "2024-06-02 23:00:00 UTC",
+            "2024-06-02 23:06:00 UTC",
+            "2024-06-02 23:12:00 UTC"
+        ],
+        "endtest":[
+            "2024-06-04 21:06:00 UTC",
+            "2024-06-04 21:52:00 UTC",
+            "2024-06-04 21:59:00 UTC"
+        ]
+    },
+
+    {
+        "name":"Team Purple Flurp",
+        "number":2,
+        "color":"purple",
+        "order":
+        [
+            ["Super Mario 64","itsbeeve"],
+            ["Spyro: Year of the Dragon","Dereklander"],
+            ["Super Mario Sunshine","SheilaSlays"],
+            ["Crash Bandicoot","Awesome7285"],
+            ["Banjo-Kazooie","TSRStormed"],
+            ["Super Mario Galaxy 2","marcoUntold"],
+            ["Crash Bandicoot 2","ChaoticAether"],
+            ["Donkey Kong 64","Bismuth9"],
+            ["Spyro the Dragon","aldeezy1"],
+            ["Spyro 2: Ripto's Rage!","AetherStrider"],
+            ["Super Mario Galaxy","meowmix_fan"],
+            ["Banjo-Tooie","Candy_Boots"],
+            ["Crash Bandicoot: WARPED","Dereklander"]
+            
+        ],
+        "finished":0,
+        "start":[
+            "2024-06-21 23:00:00 UTC",
+            "2024-06-22 00:39:57 UTC",
+            "2024-06-22 03:51:58 UTC",
+            "2024-06-22 07:37:58 UTC",
+            "2024-06-22 09:01:00 UTC",
+            "2024-06-22 11:25:50 UTC",
+            "2024-06-22 20:52:57 UTC",
+            "2024-06-22 22:10:26 UTC",
+            "2024-06-23 04:10:17 UTC",
+            "2024-06-23 05:42:52 UTC",
+            "2024-06-23 07:38:55 UTC",
+            "2024-06-23 13:53:44 UTC",
+            "2024-06-23 18:47:39 UTC"
+        ],
+        "end":[
+            "2024-06-22 00:39:57 UTC",
+            "2024-06-22 03:51:58 UTC",
+            "2024-06-22 07:37:58 UTC",
+            "2024-06-22 09:01:00 UTC",
+            "2024-06-22 11:25:50 UTC",
+            "2024-06-22 20:52:57 UTC",
+            "2024-06-22 22:10:26 UTC",
+            "2024-06-23 04:10:17 UTC",
+            "2024-06-23 05:42:52 UTC",
+            "2024-06-23 07:38:55 UTC",
+            "2024-06-23 13:53:44 UTC",
+            "2024-06-23 18:47:39 UTC",
+            "2024-06-23 21:09:15 UTC"
+        ],
+        "starttest":[
+            "2024-06-02 23:00:00 UTC",
+            "2024-06-02 23:04:00 UTC",
+            "2024-06-02 23:07:00 UTC"
+        ],
+        "endtest":[
+            "2024-06-02 23:04:00 UTC",
+            "2024-06-02 23:07:00 UTC",
+            "2024-06-02 23:29:30 UTC"
+        ]
+    },
+
+    {
+        "name":"Big Laundry",
+        "number":3,
+        "color":"green",
+        "order":
+        [
+            ["Super Mario 64","GoodGrieth"],
+            ["Super Mario Sunshine","KingjO444"],
+            ["Super Mario Galaxy","KingjO444"],
+            ["Super Mario Galaxy 2","tackleshift8"],
+            ["Banjo-Kazooie","Duck"],
+            ["Banjo-Tooie","linkarf"],
+            ["Donkey Kong 64","Auphonium"],
+            ["Crash Bandicoot","SuperSphere_"],
+            ["Crash Bandicoot 2","SuperSphere_"],
+            ["Crash Bandicoot: WARPED","notvanni"],
+            ["Spyro the Dragon","Synyadriel"],
+            ["Spyro 2: Ripto's Rage!","Bradley_Gam1ng"],
+            ["Spyro: Year of the Dragon","notvanni"]
+        ],
+        "finished":0,
+        "start":[
+            "2024-06-21 23:00:00 UTC",
+            "2024-06-21 23:00:00 UTC",
+            "2024-06-21 23:00:00 UTC",
+            "2024-06-21 23:00:00 UTC",
+            "2024-06-21 23:00:00 UTC",
+            "2024-06-21 23:00:00 UTC",
+            "2024-06-21 23:00:00 UTC",
+            "2024-06-21 23:00:00 UTC",
+            "2024-06-21 23:00:00 UTC",
+            "2024-06-21 23:00:00 UTC",
+            "2024-06-21 23:00:00 UTC",
+            "2024-06-21 23:00:00 UTC",
+            "2024-06-21 23:00:00 UTC"
+        ],
+        "end":[
+            "2024-06-02T23:04:00.000Z",
+            "2024-06-02T23:04:00.000Z",
+            "2024-06-02T23:04:00.000Z",
+            "2024-06-02T23:04:00.000Z",
+            "2024-06-02T23:04:00.000Z",
+            "2024-06-02T23:04:00.000Z",
+            "2024-06-02T23:04:00.000Z",
+            "2024-06-02T23:04:00.000Z",
+            "2024-06-02T23:04:00.000Z",
+            "2024-06-02T23:04:00.000Z",
+            "2024-06-02T23:04:00.000Z",
+            "2024-06-02T23:04:00.000Z",
+            "2024-06-02T23:04:00.000Z"
+        ],
+        "starttest":[
+            "2024-06-02 23:00:00 UTC",
+            "2024-06-02 23:02:50 UTC",
+            "2024-06-02 23:08:00 UTC"
+        ],
+        "endtest":[
+            "2024-06-02 23:02:50 UTC",
+            "2024-06-02 23:08:00 UTC",
+            "2024-06-02 23:09:20 UTC"
+        ]
+    },
+
+    {
+        "name":"Goon-ba Squad",
+        "number":4,
+        "color":"blue",
+        "order":
+        [
+            ["Crash Bandicoot","Pianoman7117"],
+            ["Spyro the Dragon","debianchan"],
+            ["Banjo-Kazooie","NadeTheGreat"],
+            ["Spyro 2: Ripto's Rage!","Nuke_47"],
+            ["Donkey Kong 64","Awhitmore"],
+            ["Super Mario 64","Erthide"],
+            ["Super Mario Galaxy 2","SuperViperT302"],
+            ["Crash Bandicoot: WARPED","Pianoman7117"],
+            ["Spyro: Year of the Dragon","Nuke_47"],
+            ["Crash Bandicoot 2","Klaxxy73"],
+            ["Super Mario Sunshine","JasonMatthew20"],
+            ["Super Mario Galaxy","Erthide"],
+            ["Banjo-Tooie","g0goTBC"]
+        ],
+        "finished":0,
+        "start":[
+            "2024-06-21 23:00:00 UTC",
+            "2024-06-22 01:29:05 UTC",
+            "2024-06-22 06:02:14 UTC",
+            "2024-06-22 07:45:34 UTC",
+            "2024-06-22 11:30:57 UTC",
+            "2024-06-22 17:05:47 UTC",
+            "2024-06-22 18:39:14 UTC",
+            "2024-06-23 00:07:30 UTC",
+            "2024-06-23 02:08:16 UTC",
+            "2024-06-23 03:58:15 UTC",
+            "2024-06-23 05:11:12 UTC",
+            "2024-06-23 10:01:16 UTC",
+            "2024-06-23 11:39:32 UTC"
+        ],
+        "end":[
+            "2024-06-22 01:29:05 UTC",
+            "2024-06-22 06:02:14 UTC",
+            "2024-06-22 07:45:34 UTC",
+            "2024-06-22 11:30:57 UTC",
+            "2024-06-22 17:05:47 UTC",
+            "2024-06-22 18:39:14 UTC",
+            "2024-06-23 00:07:30 UTC",
+            "2024-06-23 02:08:16 UTC",
+            "2024-06-23 03:58:15 UTC",
+            "2024-06-23 05:11:12 UTC",
+            "2024-06-23 10:01:16 UTC",
+            "2024-06-23 11:39:32 UTC",
+            "2024-06-23 21:01:34 UTC"
+        ],
+        "starttest":[
+            "2024-06-02 23:00:00 UTC",
+            "2024-06-02 23:05:00 UTC",
+            "2024-06-02 23:12:00 UTC"
+        ],
+        "endtest":[
+            "2024-06-02 23:05:00 UTC",
+            "2024-06-02 23:12:00 UTC",
+            "2024-06-02 23:40:00 UTC"
+        ]
+    },
+
+    {
+        "name":"Magenta isn't real it can't hurt you",
+        "number":5,
+        "color":"magenta",
+        "order":
+        [
+            ["Super Mario 64","Expreli_"],
+            ["Super Mario Sunshine","Expreli_"],
+            ["Super Mario Galaxy","icupspeedruns"],
+            ["Super Mario Galaxy 2","CastleSR_"],
+            ["Banjo-Kazooie","shlongster7"],
+            ["Banjo-Tooie","Ad129"],
+            ["Donkey Kong 64","Znernicus"],
+            ["Crash Bandicoot","Ad129"],
+            ["Crash Bandicoot 2","PlayerGameSK"],
+            ["Crash Bandicoot: WARPED","PlayerGameSK"],
+            ["Spyro the Dragon","superdave2"],
+            ["Spyro 2: Ripto's Rage!","superdave2"],
+            ["Spyro: Year of the Dragon","PlayerGameSK"]
+        ],
+        "finished":0,
+        "start":[
+            "2024-06-21 23:00:00 UTC",
+            "2024-06-21 23:00:00 UTC",
+            "2024-06-21 23:00:00 UTC",
+            "2024-06-21 23:00:00 UTC",
+            "2024-06-21 23:00:00 UTC",
+            "2024-06-21 23:00:00 UTC",
+            "2024-06-21 23:00:00 UTC",
+            "2024-06-21 23:00:00 UTC",
+            "2024-06-21 23:00:00 UTC",
+            "2024-06-21 23:00:00 UTC",
+            "2024-06-21 23:00:00 UTC",
+            "2024-06-21 23:00:00 UTC",
+            "2024-06-21 23:00:00 UTC"
+        ],
+        "end":[
+            "2024-06-02T23:04:00.000Z",
+            "2024-06-02T23:04:00.000Z",
+            "2024-06-02T23:04:00.000Z",
+            "2024-06-02T23:04:00.000Z",
+            "2024-06-02T23:04:00.000Z",
+            "2024-06-02T23:04:00.000Z",
+            "2024-06-02T23:04:00.000Z",
+            "2024-06-02T23:04:00.000Z",
+            "2024-06-02T23:04:00.000Z",
+            "2024-06-02T23:04:00.000Z",
+            "2024-06-02T23:04:00.000Z",
+            "2024-06-02T23:04:00.000Z",
+            "2024-06-02T23:04:00.000Z"
+        ],
+        "starttest":[
+            "2024-06-02 23:00:00 UTC",
+            "2024-06-02 23:09:20 UTC",
+            "2024-06-02 23:10:00 UTC"
+        ],
+        "endtest":[
+            "2024-06-02 23:09:20 UTC",
+            "2024-06-02 23:10:00 UTC",
+            "2024-06-02 23:20:00 UTC"
+        ]
+    }
+
+
+
+]
