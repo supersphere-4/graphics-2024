@@ -11,9 +11,9 @@ Since this app was created in React, please read the following instructions so d
 
 2. Run the following command so you have all the necessary dependencies:
 
-~~~npm install~~~
+    npm install
 
-3. Run the following command to start the app: ~~~npm start~~~
+3. Run the following command to start the app:      npm start
 
 4. In OBS, add a new Browser Source.
 
