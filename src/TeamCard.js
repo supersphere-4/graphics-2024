@@ -1,16 +1,17 @@
-import { Badge, Card, CardHeader, ProgressBar, Container, Row, Col, CardBody } from "react-bootstrap";
+import { Button, Card, CardHeader, ProgressBar, Container, Row, Col, CardBody } from "react-bootstrap";
 import { useEffect, useState } from "react";
 import './TeamCard.css'
 
 function TeamCard(props) {
 
-    const teamName = props.team.name;
-    const currRun = props.team.finished;
-    const currGame = props.team.order[currRun][0];
-    const currRunner = props.team.order[currRun][1];
+    const teamName = props.team.team_name;
+    const teamNameSplit = teamName.split('/');
+    const currRun = props.team.finished + props.runs[props.team.team_number - 1];
+    const currGame = props.team.schedule.runs[currRun].data.game;
+    const currRunner = props.team.schedule.runs[currRun].data.name;
     const currRunnerPronouns = props.runners.find((runner) => {return runner.name === currRunner}).pronouns;
-    const start = new Date(props.team.start[currRun]);
-    const end = new Date(props.team.end[currRun]);
+    const start = new Date(props.team.schedule.runs[currRun].scheduled);
+    const end = new Date(start.getTime() + props.team.schedule.runs[currRun].length_t*1000);
 
     const [time, setTime] = useState(new Date());
     const [currRunTime, setCurrRunTime] = useState((time - start) / (end - start) * 100);
@@ -27,23 +28,22 @@ function TeamCard(props) {
     }, [time, start, end])
 
     return (
-        <Card className="team-card m-2 mt-3" id={props.team.color}>
-            <CardHeader>
+        <Card className="team-card" style={{ width: '38rem'}} border="light">
+            <CardHeader id={props.team.team_number !== props.main ? props.team.team_color : "black"}>
                 <Container fluid>
                     <Row>
-                        <Col className="team-name" xxl="auto">{teamName}</Col>
-                        <Col s l={3}><Badge bg="warning" className="mb-2">{currRun}/13</Badge></Col>
+                        <Col xs={9} m={2} className="team-name">{teamName}</Col>
+                        <Col><Button variant="warning">GAME {currRun + 1}/13</Button></Col>
                     </Row>
                 </Container>
             </CardHeader>
-            <CardBody>
+            <CardBody id={props.team.team_color}>
                 <Container>
                         <Row>
-                            <Col><div>{currRunner}</div></Col>
-                            <Col s l={3}><Badge bg="danger" className={currRunnerPronouns === "" ? "no-pronouns" : "mt-1 ms-2"} id="pronouns">{currRunnerPronouns}</Badge></Col>
+                            <Col>{currRunner}<Button variant="danger" size="sm" className={currRunnerPronouns === "" ? "no-pronouns" : "ms-3 mb-1"} id="pronouns">{currRunnerPronouns}</Button></Col>
                         </Row>
-                        <Row><div>{currGame}</div></Row>
-                        <Row><div><ProgressBar className="mt-1" aria-label="run-progress" variant="warning" now={currRunTime} style={{height:"0.3rem"}}/></div></Row>
+                        <Row><span>{currGame}</span></Row>
+                        <Row><div><ProgressBar className="" aria-label="run-progress" variant="warning" now={currRunTime} style={{height:"0.4rem"}}/></div></Row>
                 </Container>
             </CardBody>
         </Card>

@@ -1,19 +1,17 @@
-import { Card } from "react-bootstrap";
+import { Card, CardBody, Col } from "react-bootstrap";
 import './MainStream.css'
 
 function MainStream(props) {
 
     const main = props.main;
-    const team = props.teams.find((team) => team.number == main);
-    const currRun = team.finished;
-    const currRunner = team.order[currRun][1];
+    const team = props.teams.find((team) => team.team_number == main);
+    const currRun = team.finished + props.runs[team.team_number - 1];
+    const currRunner = team.schedule.runs[currRun].data.name;
     const src = "https://player.twitch.tv/?channel=" + currRunner + "&parent=localhost";
 
     return (
-    <Card className="main-stream mt-3 ml-5">
-        <iframe src={src} width="1080px" height="840px"></iframe>
-    </Card>
-)
+        <Col className=""><iframe src={src} width="1520px" height="855px"></iframe></Col>
+    )
 }
 
 export default MainStream;

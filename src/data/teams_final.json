@@ -1,0 +1,712 @@
+[
+    {
+    "team_name":"Wake Me Up Before You Indigo-go",
+    "team_color": "indigo",
+    "team_number": 1,
+    "finished":0,
+
+    "schedule": {
+        "runs": [
+            {
+                "length": "PT2H",
+                "length_t": 7200,
+                "scheduled": "2024-06-21T23:00:00+00:00",
+                "scheduled_t": 1719010800,
+                "data": {
+                    "name":"Bregermann",
+                    "game":"Spyro the Dragon"
+                }
+            },
+            {
+                "length": "PT6H",
+                "length_t": 21600,
+                "scheduled": "2024-06-22T01:00:00+00:00",
+                "scheduled_t": 1719018000,
+                "data": {
+                    "name":"CornCobx0",
+                    "game":"Donkey Kong 64"
+                }
+            },
+            {
+                "length": "PT1H20M",
+                "length_t": 4800,
+                "scheduled": "2024-06-22T07:00:00+00:00",
+                "scheduled_t": 1719039600,
+                "data": {
+                    "name":"Tom_TJ",
+                    "game":"Crash Bandicoot 2: Cortex Strikes Back"
+                }
+            },
+            {
+                "length": "PT2H15M",
+                "length_t": 8100,
+                "scheduled": "2024-06-22T08:20:00+00:00",
+                "scheduled_t": 1719044400,
+                "data": {
+                    "name":"arex_sanx",
+                    "game":"Banjo-Kazooie"
+                }
+            },
+            {
+                "length": "PT10H20M",
+                "length_t": 37200,
+                "scheduled": "2024-06-22T10:35:00+00:00",
+                "scheduled_t": 1719052500,
+                "data": {
+                    "name":"swagh007",
+                    "game":"Super Mario Galaxy 2"
+                }
+            },
+            {
+                "length": "PT1H40M",
+                "length_t": 6000,
+                "scheduled": "2024-06-22T20:55:00+00:00",
+                "scheduled_t": 1719089700,
+                "data": {
+                    "name":"zacharylawrence",
+                    "game":"Spyro 2: Ripto's Rage!"
+                }
+            },
+            {
+                "length": "PT1H15M",
+                "length_t": 4500,
+                "scheduled": "2024-06-22T22:35:00+00:00",
+                "scheduled_t": 1719095700,
+                "data": {
+                    "name":"imainleesin",
+                    "game":"Crash Bandicoot"
+                }
+            },
+            {
+                "length": "PT1H45M",
+                "length_t": 6300,
+                "scheduled": "2024-06-22T23:50:00+00:00",
+                "scheduled_t": 1719100200,
+                "data": {
+                    "name":"Odme_",
+                    "game":"Super Mario 64"
+                }
+            },
+            {
+                "length": "PT5H25M",
+                "length_t": 19500,
+                "scheduled": "2024-06-23T01:35:00+00:00",
+                "scheduled_t": 1719106500,
+                "data": {
+                    "name":"zacharylawrence",
+                    "game":"Banjo-Tooie"
+                }
+            },
+            {
+                "length": "PT4H",
+                "length_t": 14400,
+                "scheduled": "2024-06-23T07:00:00+00:00",
+                "scheduled_t": 1719126000,
+                "data": {
+                    "name":"imainleesin",
+                    "game":"Spyro: Year of the Dragon"
+                }
+            },
+            {
+                "length": "PT5H35M",
+                "length_t": 20100,
+                "scheduled": "2024-06-23T11:00:00+00:00",
+                "scheduled_t": 1719140400,
+                "data": {
+                    "name":"Galaxtic",
+                    "game":"Super Mario Galaxy"
+                }
+            },
+            {
+                "length": "PT3H05M",
+                "length_t": 11100,
+                "scheduled": "2024-06-23T16:35:00+00:00",
+                "scheduled_t": 1719160500,
+                "data": {
+                    "name":"Odme_",
+                    "game":"Super Mario Sunshine"
+                }
+            },
+            {
+                "length": "PT2H55M",
+                "length_t": 10500,
+                "scheduled": "2024-06-23T19:40:00+00:00",
+                "scheduled_t": 1719171600,
+                "data": {
+                    "name":"Bregermann",
+                    "game":"Crash Bandicoot: WARPED"
+                }
+            }
+        ]
+    }
+    },
+
+    {
+        "team_name":"Team Purple Flurp (from Jimmy Neutron)",
+        "team_color":"purple",
+        "team_number":2,
+        "finished":0,
+
+        "schedule": {
+            "runs": [
+                {
+                    "length": "PT1H40M",
+                    "length_t": 6000,
+                    "scheduled": "2024-06-21T19:00:00-04:00",
+                    "scheduled_t": 1719010800,
+                    "data": {
+                        "name":"itsbeeve",
+                        "game":"Super Mario 64"
+                    }
+                },
+                {
+                    "length": "PT3H10M",
+                    "length_t": 11400,
+                    "scheduled": "2024-06-21T20:40:00-04:00",
+                    "scheduled_t": 1719016800,
+                    "data": {
+                        "name":"Dereklander",
+                        "game":"Spyro: Year of the Dragon"
+                    }
+                },
+                {
+                    "length": "PT3H50M",
+                    "length_t": 13800,
+                    "scheduled": "2024-06-21T23:50:00-04:00",
+                    "scheduled_t": 1719028200,
+                    "data": {
+                        "name":"SheilaSlays",
+                        "game":"Super Mario Sunshine"
+                    }
+                },
+                {
+                    "length": "PT1H40M",
+                    "length_t": 6000,
+                    "scheduled": "2024-06-22T03:40:00-04:00",
+                    "scheduled_t": 1719042000,
+                    "data": {
+                        "name":"Awesome7285",
+                        "game":"Crash Bandicoot"
+                    }
+                },
+                {
+                    "length": "PT2H30M",
+                    "length_t": 9000,
+                    "scheduled": "2024-06-22T05:20:00-04:00",
+                    "scheduled_t": 1719048000,
+                    "data": {
+                        "name":"TSRStormed",
+                        "game":"Banjo-Kazooie"
+                    }
+                },
+                {
+                    "length": "PT9H30M",
+                    "length_t": 34200,
+                    "scheduled": "2024-06-22T07:50:00-04:00",
+                    "scheduled_t": 1719057000,
+                    "data": {
+                        "name":"marcoUntold",
+                        "game":"Super Mario Galaxy 2"
+                    }
+                },
+                {
+                    "length": "PT1H20M",
+                    "length_t": 4800,
+                    "scheduled": "2024-06-22T17:20:00-04:00",
+                    "scheduled_t": 1719091200,
+                    "data": {
+                        "name":"ChaoticAether",
+                        "game":"Crash Bandicoot 2: Cortex Strikes Back"
+                    }
+                },
+                {
+                    "length": "PT6H",
+                    "length_t": 21600,
+                    "scheduled": "2024-06-22T18:40:00-04:00",
+                    "scheduled_t": 1719096000,
+                    "data": {
+                        "name":"Bismuth9",
+                        "game":"Donkey Kong 64"
+                    }
+                },
+                {
+                    "length": "PT1H40M",
+                    "length_t": 6000,
+                    "scheduled": "2024-06-23T00:40:00-04:00",
+                    "scheduled_t": 1719117600,
+                    "data": {
+                        "name":"aldeezy1",
+                        "game":"Spyro the Dragon"
+                    }
+                },
+                {
+                    "length": "PT2H",
+                    "length_t": 7200,
+                    "scheduled": "2024-06-23T02:20:00-04:00",
+                    "scheduled_t": 1719123600,
+                    "data": {
+                        "name":"AetherStrider",
+                        "game":"Spyro 2: Ripto's Rage!"
+                    }
+                },
+                {
+                    "length": "PT6H20M",
+                    "length_t": 22800,
+                    "scheduled": "2024-06-23T04:20:00-04:00",
+                    "scheduled_t": 1719130800,
+                    "data": {
+                        "name":"meowmix_fan",
+                        "game":"Super Mario Galaxy"
+                    }
+                },
+                {
+                    "length": "PT4H50M",
+                    "length_t": 17400,
+                    "scheduled": "2024-06-23T10:40:00-04:00",
+                    "scheduled_t": 1719153600,
+                    "data": {
+                        "name":"Candy_Boots",
+                        "game":"Banjo-Tooie"
+                    }
+                },
+                {
+                    "length": "PT2H20M",
+                    "length_t": 8400,
+                    "scheduled": "2024-06-23T15:30:00-04:00",
+                    "scheduled_t": 1719171000,
+                    "data": {
+                        "name":"Dereklander",
+                        "game":"Crash Bandicoot: WARPED"
+                    }
+                }
+            ]
+        }
+    },
+
+    {
+        "team_name":"Big Laundry",
+        "team_color":"green",
+        "team_number":3,
+        "finished":0,
+
+        "schedule": {
+            "runs": [
+                {
+                    "length": "PT1H20M",
+                    "length_t": 4800,
+                    "scheduled": "2024-06-21T19:00:00-04:00",
+                    "scheduled_t": 1719010800,
+                    "data": {
+                        "name":"SuperSphere_",
+                        "game":"Crash Bandicoot"
+                    }
+                },
+                {
+                    "length": "PT2H08M",
+                    "length_t": 7680,
+                    "scheduled": "2024-06-21T20:20:00-04:00",
+                    "scheduled_t": 1719015600,
+                    "data": {
+                        "name":"Duck",
+                        "game":"Banjo-Kazooie"
+                    }
+                },
+                {
+                    "length": "PT3H",
+                    "length_t": 10800,
+                    "scheduled": "2024-06-21T22:28:00-04:00",
+                    "scheduled_t": 1719023280,
+                    "data": {
+                        "name":"notvanni",
+                        "game":"Spyro: Year of the Dragon"
+                    }
+                },
+                {
+                    "length": "PT1H50M",
+                    "length_t": 6600,
+                    "scheduled": "2024-06-22T01:28:00-04:00",
+                    "scheduled_t": 1719034080,
+                    "data": {
+                        "name":"GoodGrieth",
+                        "game":"Super Mario 64"
+                    }
+                },
+                {
+                    "length": "PT2H16M",
+                    "length_t": 8160,
+                    "scheduled": "2024-06-22T03:18:00-04:00",
+                    "scheduled_t": 1719040680,
+                    "data": {
+                        "name":"Synyadriel",
+                        "game":"Spyro the Dragon"
+                    }
+                },
+                {
+                    "length": "PT9H45M",
+                    "length_t": 35100,
+                    "scheduled": "2024-06-22T05:34:00-04:00",
+                    "scheduled_t": 1719048840,
+                    "data": {
+                        "name":"tackleshift8",
+                        "game":"Super Mario Galaxy 2"
+                    }
+                },
+                {
+                    "length": "PT6H15M",
+                    "length_t": 22500,
+                    "scheduled": "2024-06-22T15:19:00-04:00",
+                    "scheduled_t": 1719083940,
+                    "data": {
+                        "name":"ember77_",
+                        "game":"Super Mario Galaxy"
+                    }
+                },
+                {
+                    "length": "PT1H22M",
+                    "length_t": 4920,
+                    "scheduled": "2024-06-22T21:34:00-04:00",
+                    "scheduled_t": 1719106440,
+                    "data": {
+                        "name":"SuperSphere_",
+                        "game":"Crash Bandicoot 2: Cortex Strikes Back"
+                    }
+                },
+                {
+                    "length": "PT5H44M",
+                    "length_t": 20640,
+                    "scheduled": "2024-06-22T22:56:00-04:00",
+                    "scheduled_t": 1719111360,
+                    "data": {
+                        "name":"Auphonium",
+                        "game":"Donkey Kong 64"
+                    }
+                },
+                {
+                    "length": "PT5H20M",
+                    "length_t": 19200,
+                    "scheduled": "2024-06-23T04:40:00-04:00",
+                    "scheduled_t": 1719132000,
+                    "data": {
+                        "name":"linkarf",
+                        "game":"Banjo-Tooie"
+                    }
+                },
+                {
+                    "length": "PT2H12M",
+                    "length_t": 7920,
+                    "scheduled": "2024-06-23T10:00:00-04:00",
+                    "scheduled_t": 1719151200,
+                    "data": {
+                        "name":"notvanni",
+                        "game":"Crash Bandicoot: WARPED"
+                    }
+                },
+                {
+                    "length": "PT4H",
+                    "length_t": 14400,
+                    "scheduled": "2024-06-23T12:12:00-04:00",
+                    "scheduled_t": 1719159120,
+                    "data": {
+                        "name":"KingjO444",
+                        "game":"Super Mario Sunshine"
+                    }
+                },
+                {
+                    "length": "PT1H54M",
+                    "length_t": 6840,
+                    "scheduled": "2024-06-23T16:12:00-04:00",
+                    "scheduled_t": 1719173520,
+                    "data": {
+                        "name":"Bradley_Gam1ng",
+                        "game":"Spyro 2: Ripto's Rage!"
+                    }
+                }
+            ]
+        }
+    },
+
+    {  
+        "team_name":"Goon-ba Squad",
+        "team_color":"blue",
+        "team_number":4,
+        "finished":0,
+
+        "schedule": {
+            "runs": [
+                {
+                    "length": "PT2H35M",
+                    "length_t": 9300,
+                    "scheduled": "2024-06-21T19:00:00-04:00",
+                    "scheduled_t": 1719010800,
+                    "data": {
+                        "name":"Pianoman7117",
+                        "game":"Crash Bandicoot: WARPED"
+                    }
+                },
+                {
+                    "length": "PT4H38M",
+                    "length_t": 16680,
+                    "scheduled": "2024-06-21T21:35:00-04:00",
+                    "scheduled_t": 1719020100,
+                    "data": {
+                        "name":"g0goTBC",
+                        "game":"Banjo-Tooie"
+                    }
+                },
+                {
+                    "length": "PT1H47M",
+                    "length_t": 6420,
+                    "scheduled": "2024-06-22T02:13:00-04:00",
+                    "scheduled_t": 1719036780,
+                    "data": {
+                        "name":"Nuke_47",
+                        "game":"Spyro 2: Ripto's Rage!"
+                    }
+                },
+                {
+                    "length": "PT3H50M",
+                    "length_t": 13800,
+                    "scheduled": "2024-06-22T04:00:00-04:00",
+                    "scheduled_t": 1719043200,
+                    "data": {
+                        "name":"Nuke_47",
+                        "game":"Spyro: Year of the Dragon"
+                    }
+                },
+                {
+                    "length": "PT5H40M",
+                    "length_t": 20400,
+                    "scheduled": "2024-06-22T07:50:00-04:00",
+                    "scheduled_t": 1719057000,
+                    "data": {
+                        "name":"Erthide",
+                        "game":"Super Mario Galaxy"
+                    }
+                },
+                {
+                    "length": "PT1H40M",
+                    "length_t": 6000,
+                    "scheduled": "2024-06-22T13:30:00-04:00",
+                    "scheduled_t": 1719077400,
+                    "data": {
+                        "name":"Pianoman7117",
+                        "game":"Crash Bandicoot"
+                    }
+                },
+                {
+                    "length": "PT5H35M",
+                    "length_t": 20100,
+                    "scheduled": "2024-06-22T15:10:00-04:00",
+                    "scheduled_t": 1719083400,
+                    "data": {
+                        "name":"Awhitmore",
+                        "game":"Donkey Kong 64"
+                    }
+                },
+                {
+                    "length": "PT2H05M",
+                    "length_t": 7500,
+                    "scheduled": "2024-06-22T20:45:00-04:00",
+                    "scheduled_t": 1719103500,
+                    "data": {
+                        "name":"NadeTheGreat",
+                        "game":"Banjo-Kazooie"
+                    }
+                },
+                {
+                    "length": "PT1H54M",
+                    "length_t": 6840,
+                    "scheduled": "2024-06-22T22:50:00-04:00",
+                    "scheduled_t": 1719111000,
+                    "data": {
+                        "name":"Erthide",
+                        "game":"Super Mario 64"
+                    }
+                },
+                {
+                    "length": "PT4H30M",
+                    "length_t": 16200,
+                    "scheduled": "2024-06-23T00:44:00-04:00",
+                    "scheduled_t": 1719117840,
+                    "data": {
+                        "name":"JasonMatthew20",
+                        "game":"Super Mario Sunshine"
+                    }
+                },
+                {
+                    "length": "PT1H15M",
+                    "length_t": 4500,
+                    "scheduled": "2024-06-23T05:14:00-04:00",
+                    "scheduled_t": 1719134040,
+                    "data": {
+                        "name":"Klaxxy73",
+                        "game":"Crash Bandicoot 2: Cortex Strikes Back"
+                    }
+                },
+                {
+                    "length": "PT1H42M",
+                    "length_t": 6120,
+                    "scheduled": "2024-06-23T06:29:00-04:00",
+                    "scheduled_t": 1719138540,
+                    "data": {
+                        "name":"debianchan",
+                        "game":"Spyro the Dragon"
+                    }
+                },
+                {
+                    "length": "PT9H25M",
+                    "length_t": 33900,
+                    "scheduled": "2024-06-23T08:11:00-04:00",
+                    "scheduled_t": 1719144660,
+                    "data": {
+                        "name":"SuperViperT302",
+                        "game":"Super Mario Galaxy 2"
+                    }
+                }
+            ]
+        }
+    },
+
+    {
+        "team_name":"Magenta isn't real it can't hurt you",
+        "team_color":"magenta",
+        "team_number": 5,
+        "finished":0,
+
+        "schedule": {
+            "runs": [
+                {
+                    "length": "PT1H35M",
+                    "length_t": 5700,
+                    "scheduled": "2024-06-21T19:00:00-04:00",
+                    "scheduled_t": 1719010800,
+                    "data": {
+                        "name":"superdave2",
+                        "game":"Spyro the Dragon"
+                    }
+                },
+                {
+                    "length": "PT2H",
+                    "length_t": 7200,
+                    "scheduled": "2024-06-21T20:35:00-04:00",
+                    "scheduled_t": 1719016500,
+                    "data": {
+                        "name":"Expreli_",
+                        "game":"Super Mario 64"
+                    }
+                },
+                {
+                    "length": "PT3H30M",
+                    "length_t": 12600,
+                    "scheduled": "2024-06-21T22:35:00-04:00",
+                    "scheduled_t": 1719023700,
+                    "data": {
+                        "name":"Expreli_",
+                        "game":"Super Mario Sunshine"
+                    }
+                },
+                {
+                    "length": "PT1H35M",
+                    "length_t": 5700,
+                    "scheduled": "2024-06-22T02:05:00-04:00",
+                    "scheduled_t": 1719036300,
+                    "data": {
+                        "name":"PlayerGameSK",
+                        "game":"Crash Bandicoot 2: Cortex Strikes Back"
+                    }
+                },
+                {
+                    "length": "PT2H",
+                    "length_t": 7200,
+                    "scheduled": "2024-06-22T03:40:00-04:00",
+                    "scheduled_t": 1719042000,
+                    "data": {
+                        "name":"Ad129SR",
+                        "game":"Crash Bandicoot"
+                    }
+                },
+                {
+                    "length": "PT2H20M",
+                    "length_t": 8400,
+                    "scheduled": "2024-06-22T05:40:00-04:00",
+                    "scheduled_t": 1719049200,
+                    "data": {
+                        "name":"PlayerGameSK",
+                        "game":"Crash Bandicoot: WARPED"
+                    }
+                },
+                {
+                    "length": "PT6H45M",
+                    "length_t": 24300,
+                    "scheduled": "2024-06-22T08:00:00-04:00",
+                    "scheduled_t": 1719057600,
+                    "data": {
+                        "name":"icupspeedruns",
+                        "game":"Super Mario Galaxy"
+                    }
+                },
+                {
+                    "length": "PT1H55M",
+                    "length_t": 6900,
+                    "scheduled": "2024-06-22T14:45:00-04:00",
+                    "scheduled_t": 1719081900,
+                    "data": {
+                        "name":"superdave2",
+                        "game":"Spyro 2: Ripto's Rage!"
+                    }
+                },
+                {
+                    "length": "PT5H35M",
+                    "length_t": 20100,
+                    "scheduled": "2024-06-22T16:40:00-04:00",
+                    "scheduled_t": 1719088800,
+                    "data": {
+                        "name":"Znernicus",
+                        "game":"Donkey Kong 64"
+                    }
+                },
+                {
+                    "length": "PT2H05M",
+                    "length_t": 7500,
+                    "scheduled": "2024-06-22T22:15:00-04:00",
+                    "scheduled_t": 1719108900,
+                    "data": {
+                        "name":"shlongster7",
+                        "game":"Banjo-Kazooie"
+                    }
+                },
+                {
+                    "length": "PT5H10M",
+                    "length_t": 18600,
+                    "scheduled": "2024-06-23T00:20:00-04:00",
+                    "scheduled_t": 1719116400,
+                    "data": {
+                        "name":"Ad129SR",
+                        "game":"Banjo-Tooie"
+                    }
+                },
+                {
+                    "length": "PT3H50M",
+                    "length_t": 13800,
+                    "scheduled": "2024-06-23T05:30:00-04:00",
+                    "scheduled_t": 1719135000,
+                    "data": {
+                        "name":"PlayerGameSK",
+                        "game":"Spyro: Year of the Dragon"
+                    }
+                },
+                {
+                    "length": "PT9H25M",
+                    "length_t": 33900,
+                    "scheduled": "2024-06-23T09:20:00-04:00",
+                    "scheduled_t": 1719148800,
+                    "data": {
+                        "name":"CastleSR",
+                        "game":"Super Mario Galaxy 2"
+                    }
+                }
+            ]
+        }
+    }
+
+]

@@ -1,12 +1,49 @@
 .team-card {
-    vertical-align: baseline;
-    width: 100%;
-    height: 100%;
-    font-size: larger;
-    text-shadow: 1px 1px 2px black;
+    font-size: x-large;
+    text-shadow: 2px 1px 6px black;
     color:white !important;
     border: 3cm black;
     border-radius: 4rem;
+}
+
+.main-card {
+    font-size: 52px;
+}
+
+.no-pronouns {
+    display: none;
+    visibility: hidden;
+}
+
+.in-progress {
+    display:block;
+    opacity:0.4;
+}
+
+.incomplete {
+    visibility: hidden;
+}
+
+.pronouns {
+    font-size: x-small;
+    background-color: red;
+}
+
+#team-name {
+    align-self:flex-start;
+    font-family: 'Encode Sans Condensed Bold Regular';
+    font-weight: bolder;
+    font-size:medium;
+    font-stretch: extra-condensed !important;
+}
+
+.team-progress {
+    font-size: small;
+    background-color: rgb(253, 232, 0);
+}
+
+#black {
+    background: black !important;
 }
 
 #indigo {
@@ -30,7 +67,7 @@
 }
 
 #sub-stream {
-    outline: black;
-    outline-width: 2.5rem;
+    width:fit-content;
+    height:fit-content;
 }
 
