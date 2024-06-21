@@ -7,7 +7,8 @@ function MainTeamCard(props) {
 
     const team = props.teams.find((team)=> {return team.team_number === props.main});
     const teamName = team.team_name;
-    const currRun = team.finished + props.runs[team.team_number - 1];
+    const isTeamFinished = team.finished + props.runs[team.team_number - 1] == 13;
+    const currRun = Math.min(12, team.finished + props.runs[team.team_number - 1]);
     const currGame = team.schedule.runs[currRun].data.game;
     const currRunner = team.schedule.runs[currRun].data.name;
     const currRunnerPronouns = props.runners.find((runner) => {return runner.name === currRunner}).pronouns;
@@ -17,7 +18,7 @@ function MainTeamCard(props) {
     games.sort((game1, game2) => gameOrder.indexOf(game1[0]) - gameOrder.indexOf(game2[0]));
     const gamesCompleted = games.map((game) => {
             let src = "/game_logos/" + game[1] + ".png";
-            return <div><Image src={src} width="128px" className={currRun > gameOrder.indexOf(game[0]) ? "complete" : currRun == gameOrder.indexOf(game[0]) ? "in-progress" : "incomplete"}></Image></div>
+            return <div><Image src={src} width="128px" className={isTeamFinished || currRun > gameOrder.indexOf(game[0]) ? "complete" : currRun == gameOrder.indexOf(game[0]) ? "in-progress" : "incomplete"}></Image></div>
         }
     )
         

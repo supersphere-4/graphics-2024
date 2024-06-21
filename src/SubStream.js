@@ -4,6 +4,7 @@ import './TeamCard.css'
 function SubStream(props) {
 
     const currRun = props.team.finished + props.runs[props.team.team_number - 1];
+    if (currRun >= 13) return;
     const currRunner = props.team.schedule.runs[currRun].data.name;
     const src = "https://player.twitch.tv/?channel=" + currRunner + "&parent=localhost&muted=true";
 

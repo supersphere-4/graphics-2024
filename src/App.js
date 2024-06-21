@@ -10,24 +10,40 @@ import MainTeamCard from './MainTeamCard';
 
 function App(props) {
     
+    const [time, setTime] = useState(0);
+    const [runsCompleted, setRunsCompleted] = useState([0, 0, 0, 0, 0]);
 
     function MainStreamOverride(team_number) {
+        if (runsCompleted.every(run => run >= 13)) {
+            console.error("The relay race is over!");
+            return;
+        }
+        if (runsCompleted[team_number] == 13) {
+            console.error("This team is already finished!");
+            console.warn(runsCompleted);
+            const newMain = runsCompleted.findIndex((run) => run < 13);
+            setTime(newMain > -1 ? newMain : time);
+            return;
+        }
         setTime(team_number);
     }
-
-    const [runsCompleted, setRunsCompleted] = useState([0, 0, 0, 0, 0]);
 
     function MarkRunComplete(team_number) {
         setRunsCompleted(
             function() {
                 const newRunsCompleted = runsCompleted;
-                newRunsCompleted[team_number]++;
+                newRunsCompleted[team_number] = Math.min(13, newRunsCompleted[team_number] + 1);
                 return newRunsCompleted;
             }
         )
+        if (runsCompleted[team_number] == 13) {
+            console.log(runsCompleted);
+            console.error("Team " + team_number + " already finished!");
+            const newMain = runsCompleted.findIndex((run) => run < 13);
+            setTime(newMain > -1 ? newMain : time);
+            console.warn("Set main stream to Team " + time);
+        }
     }
-
-    const [time, setTime] = useState(0);
 
     useEffect(() => {
         const interval = setInterval(() => {

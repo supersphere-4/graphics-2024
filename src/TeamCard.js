@@ -5,8 +5,8 @@ import './TeamCard.css'
 function TeamCard(props) {
 
     const teamName = props.team.team_name;
-    const teamNameSplit = teamName.split('/');
-    const currRun = props.team.finished + props.runs[props.team.team_number - 1];
+    const isTeamFinished = props.team.finished + props.runs[props.team.team_number - 1] == 13;
+    const currRun = Math.min(props.team.finished + props.runs[props.team.team_number - 1], 12);
     const currGame = props.team.schedule.runs[currRun].data.game;
     const currRunner = props.team.schedule.runs[currRun].data.name;
     const currRunnerPronouns = props.runners.find((runner) => {return runner.name === currRunner}).pronouns;
@@ -33,7 +33,7 @@ function TeamCard(props) {
                 <Container fluid>
                     <Row>
                         <Col xs={9} m={2} className="team-name">{teamName}</Col>
-                        <Col><Button variant="warning">GAME {currRun + 1}/13</Button></Col>
+                        <Col><Button variant="warning">{isTeamFinished ? "FINISHED" : "GAME " + (currRun + 1) + "/13"} </Button></Col>
                     </Row>
                 </Container>
             </CardHeader>
