@@ -19,4 +19,4 @@ Since this app was created in React, please read the following instructions so d
 
 4. In OBS, add a new Browser Source.
 
-5. Make sure the resolution of the browser source is set to 1920x1080, and that the URL is set to localhost:3000. If done right, you should see everything on screen!
+5. Make sure the resolution of the browser source is set to 2560x1440, and that the URL is set to localhost:3000. If done right, you should see everything on screen!
