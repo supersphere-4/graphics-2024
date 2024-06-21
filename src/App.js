@@ -33,6 +33,7 @@ function App(props) {
             function() {
                 const newRunsCompleted = runsCompleted;
                 newRunsCompleted[team_number] = Math.min(13, newRunsCompleted[team_number] + 1);
+                setTime(time + 5);
                 return newRunsCompleted;
             }
         )
