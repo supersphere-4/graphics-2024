@@ -230,23 +230,23 @@
                     }
                 },
                 {
-                    "length": "PT1H40M",
-                    "length_t": 6000,
+                    "length": "PT2H",
+                    "length_t": 7200,
                     "scheduled": "2024-06-23T00:40:00-04:00",
                     "scheduled_t": 1719117600,
                     "data": {
-                        "name":"aldeezy1",
-                        "game":"Spyro the Dragon"
+                        "name":"AetherStrider",
+                        "game":"Spyro 2: Ripto's Rage!"
                     }
                 },
                 {
-                    "length": "PT2H",
+                    "length": "PT1H40M",
                     "length_t": 7200,
-                    "scheduled": "2024-06-23T02:20:00-04:00",
-                    "scheduled_t": 1719123600,
+                    "scheduled": "2024-06-23T02:40:00-04:00",
+                    "scheduled_t": 1719124800,
                     "data": {
-                        "name":"AetherStrider",
-                        "game":"Spyro 2: Ripto's Rage!"
+                        "name":"aldeezy1",
+                        "game":"Spyro the Dragon"
                     }
                 },
                 {

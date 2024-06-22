@@ -44,12 +44,13 @@ function App(props) {
             setTime(newMain > -1 ? newMain : time);
             console.warn("Set main stream to Team " + time);
         }
+        console.warn(runsCompleted);
     }
 
     useEffect(() => {
         const interval = setInterval(() => {
             setTime(prevTime => prevTime + 1);
-        }, 1000000);
+        }, 600000);
 
         return () => {
             clearInterval(interval);
