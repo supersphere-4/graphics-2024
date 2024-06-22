@@ -212,7 +212,7 @@
                 {
                     "length": "PT1H20M",
                     "length_t": 4800,
-                    "scheduled": "2024-06-22T17:20:00-04:00",
+                    "scheduled": "2024-06-22T17:28:00-04:00",
                     "scheduled_t": 1719091200,
                     "data": {
                         "name":"ChaoticAether",
@@ -222,7 +222,7 @@
                 {
                     "length": "PT6H",
                     "length_t": 21600,
-                    "scheduled": "2024-06-22T18:40:00-04:00",
+                    "scheduled": "2024-06-22T18:48:00-04:00",
                     "scheduled_t": 1719096000,
                     "data": {
                         "name":"Bismuth9",
@@ -232,7 +232,7 @@
                 {
                     "length": "PT2H",
                     "length_t": 7200,
-                    "scheduled": "2024-06-23T00:40:00-04:00",
+                    "scheduled": "2024-06-23T00:48:00-04:00",
                     "scheduled_t": 1719117600,
                     "data": {
                         "name":"AetherStrider",
@@ -242,7 +242,7 @@
                 {
                     "length": "PT1H40M",
                     "length_t": 7200,
-                    "scheduled": "2024-06-23T02:40:00-04:00",
+                    "scheduled": "2024-06-23T02:48:00-04:00",
                     "scheduled_t": 1719124800,
                     "data": {
                         "name":"aldeezy1",
@@ -252,7 +252,7 @@
                 {
                     "length": "PT6H20M",
                     "length_t": 22800,
-                    "scheduled": "2024-06-23T04:20:00-04:00",
+                    "scheduled": "2024-06-23T04:28:00-04:00",
                     "scheduled_t": 1719130800,
                     "data": {
                         "name":"meowmix_fan",
@@ -262,7 +262,7 @@
                 {
                     "length": "PT4H50M",
                     "length_t": 17400,
-                    "scheduled": "2024-06-23T10:40:00-04:00",
+                    "scheduled": "2024-06-23T10:48:00-04:00",
                     "scheduled_t": 1719153600,
                     "data": {
                         "name":"Candy_Boots",
@@ -272,7 +272,7 @@
                 {
                     "length": "PT2H20M",
                     "length_t": 8400,
-                    "scheduled": "2024-06-23T15:30:00-04:00",
+                    "scheduled": "2024-06-23T15:38:00-04:00",
                     "scheduled_t": 1719171000,
                     "data": {
                         "name":"Dereklander",
