@@ -344,7 +344,7 @@
                 {
                     "length": "PT9H45M",
                     "length_t": 35100,
-                    "scheduled": "2024-06-22T05:34:00-04:00",
+                    "scheduled": "2024-06-22T05:29:00-04:00",
                     "scheduled_t": 1719048840,
                     "data": {
                         "name":"tackleshift8",
@@ -354,7 +354,7 @@
                 {
                     "length": "PT6H15M",
                     "length_t": 22500,
-                    "scheduled": "2024-06-22T15:19:00-04:00",
+                    "scheduled": "2024-06-22T15:14:00-04:00",
                     "scheduled_t": 1719083940,
                     "data": {
                         "name":"ember77_",
@@ -364,7 +364,7 @@
                 {
                     "length": "PT1H22M",
                     "length_t": 4920,
-                    "scheduled": "2024-06-22T21:34:00-04:00",
+                    "scheduled": "2024-06-22T21:29:00-04:00",
                     "scheduled_t": 1719106440,
                     "data": {
                         "name":"SuperSphere_",
@@ -374,7 +374,7 @@
                 {
                     "length": "PT5H44M",
                     "length_t": 20640,
-                    "scheduled": "2024-06-22T22:56:00-04:00",
+                    "scheduled": "2024-06-22T22:51:00-04:00",
                     "scheduled_t": 1719111360,
                     "data": {
                         "name":"Auphonium",
@@ -384,7 +384,7 @@
                 {
                     "length": "PT5H20M",
                     "length_t": 19200,
-                    "scheduled": "2024-06-23T04:40:00-04:00",
+                    "scheduled": "2024-06-23T04:35:00-04:00",
                     "scheduled_t": 1719132000,
                     "data": {
                         "name":"linkarf",
@@ -394,7 +394,7 @@
                 {
                     "length": "PT2H12M",
                     "length_t": 7920,
-                    "scheduled": "2024-06-23T10:00:00-04:00",
+                    "scheduled": "2024-06-23T09:55:00-04:00",
                     "scheduled_t": 1719151200,
                     "data": {
                         "name":"notvanni",
@@ -404,7 +404,7 @@
                 {
                     "length": "PT4H",
                     "length_t": 14400,
-                    "scheduled": "2024-06-23T12:12:00-04:00",
+                    "scheduled": "2024-06-23T12:07:00-04:00",
                     "scheduled_t": 1719159120,
                     "data": {
                         "name":"KingjO444",
@@ -414,7 +414,7 @@
                 {
                     "length": "PT1H54M",
                     "length_t": 6840,
-                    "scheduled": "2024-06-23T16:12:00-04:00",
+                    "scheduled": "2024-06-23T16:07:00-04:00",
                     "scheduled_t": 1719173520,
                     "data": {
                         "name":"Bradley_Gam1ng",
@@ -628,7 +628,7 @@
                 {
                     "length": "PT2H20M",
                     "length_t": 8400,
-                    "scheduled": "2024-06-22T05:40:00-04:00",
+                    "scheduled": "2024-06-22T05:30:00-04:00",
                     "scheduled_t": 1719049200,
                     "data": {
                         "name":"PlayerGameSK",
@@ -638,7 +638,7 @@
                 {
                     "length": "PT6H45M",
                     "length_t": 24300,
-                    "scheduled": "2024-06-22T08:00:00-04:00",
+                    "scheduled": "2024-06-22T07:50:00-04:00",
                     "scheduled_t": 1719057600,
                     "data": {
                         "name":"icupspeedruns",
@@ -648,7 +648,7 @@
                 {
                     "length": "PT1H55M",
                     "length_t": 6900,
-                    "scheduled": "2024-06-22T14:45:00-04:00",
+                    "scheduled": "2024-06-22T14:35:00-04:00",
                     "scheduled_t": 1719081900,
                     "data": {
                         "name":"superdave2",
@@ -658,7 +658,7 @@
                 {
                     "length": "PT5H35M",
                     "length_t": 20100,
-                    "scheduled": "2024-06-22T16:40:00-04:00",
+                    "scheduled": "2024-06-22T16:30:00-04:00",
                     "scheduled_t": 1719088800,
                     "data": {
                         "name":"Znernicus",
@@ -668,7 +668,7 @@
                 {
                     "length": "PT2H05M",
                     "length_t": 7500,
-                    "scheduled": "2024-06-22T22:15:00-04:00",
+                    "scheduled": "2024-06-22T22:05:00-04:00",
                     "scheduled_t": 1719108900,
                     "data": {
                         "name":"shlongster7",
@@ -678,7 +678,7 @@
                 {
                     "length": "PT5H10M",
                     "length_t": 18600,
-                    "scheduled": "2024-06-23T00:20:00-04:00",
+                    "scheduled": "2024-06-23T00:10:00-04:00",
                     "scheduled_t": 1719116400,
                     "data": {
                         "name":"Ad129SR",
@@ -688,7 +688,7 @@
                 {
                     "length": "PT3H50M",
                     "length_t": 13800,
-                    "scheduled": "2024-06-23T05:30:00-04:00",
+                    "scheduled": "2024-06-23T05:20:00-04:00",
                     "scheduled_t": 1719135000,
                     "data": {
                         "name":"PlayerGameSK",
@@ -698,7 +698,7 @@
                 {
                     "length": "PT9H25M",
                     "length_t": 33900,
-                    "scheduled": "2024-06-23T09:20:00-04:00",
+                    "scheduled": "2024-06-23T09:10:00-04:00",
                     "scheduled_t": 1719148800,
                     "data": {
                         "name":"CastleSR",
