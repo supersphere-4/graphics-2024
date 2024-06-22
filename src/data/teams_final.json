@@ -641,7 +641,7 @@
                     "scheduled": "2024-06-22T07:50:00-04:00",
                     "scheduled_t": 1719057600,
                     "data": {
-                        "name":"icupspeedruns",
+                        "name":"icupspeedruns_",
                         "game":"Super Mario Galaxy"
                     }
                 },
