@@ -516,7 +516,7 @@
                 {
                     "length": "PT1H54M",
                     "length_t": 6840,
-                    "scheduled": "2024-06-22T23:10:00-04:00",
+                    "scheduled": "2024-06-22T23:00:00-04:00",
                     "scheduled_t": 1719111000,
                     "data": {
                         "name":"Erthide",
