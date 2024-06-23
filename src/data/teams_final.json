@@ -678,7 +678,7 @@
                 {
                     "length": "PT5H10M",
                     "length_t": 18600,
-                    "scheduled": "2024-06-22T23:56:00-04:00",
+                    "scheduled": "2024-06-22T23:46:00-04:00",
                     "scheduled_t": 1719116400,
                     "data": {
                         "name":"Ad129SR",
@@ -688,7 +688,7 @@
                 {
                     "length": "PT3H50M",
                     "length_t": 13800,
-                    "scheduled": "2024-06-23T05:06:00-04:00",
+                    "scheduled": "2024-06-23T04:56:00-04:00",
                     "scheduled_t": 1719135000,
                     "data": {
                         "name":"PlayerGameSK",
