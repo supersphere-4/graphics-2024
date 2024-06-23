@@ -516,7 +516,7 @@
                 {
                     "length": "PT1H54M",
                     "length_t": 6840,
-                    "scheduled": "2024-06-22T22:50:00-04:00",
+                    "scheduled": "2024-06-22T23:10:00-04:00",
                     "scheduled_t": 1719111000,
                     "data": {
                         "name":"Erthide",
@@ -526,7 +526,7 @@
                 {
                     "length": "PT4H30M",
                     "length_t": 16200,
-                    "scheduled": "2024-06-23T00:44:00-04:00",
+                    "scheduled": "2024-06-23T01:04:00-04:00",
                     "scheduled_t": 1719117840,
                     "data": {
                         "name":"JasonMatthew20",
@@ -536,7 +536,7 @@
                 {
                     "length": "PT1H15M",
                     "length_t": 4500,
-                    "scheduled": "2024-06-23T05:14:00-04:00",
+                    "scheduled": "2024-06-23T05:34:00-04:00",
                     "scheduled_t": 1719134040,
                     "data": {
                         "name":"Klaxxy73",
@@ -546,7 +546,7 @@
                 {
                     "length": "PT1H42M",
                     "length_t": 6120,
-                    "scheduled": "2024-06-23T06:29:00-04:00",
+                    "scheduled": "2024-06-23T06:49:00-04:00",
                     "scheduled_t": 1719138540,
                     "data": {
                         "name":"debianchan",
@@ -556,7 +556,7 @@
                 {
                     "length": "PT9H25M",
                     "length_t": 33900,
-                    "scheduled": "2024-06-23T08:11:00-04:00",
+                    "scheduled": "2024-06-23T08:31:00-04:00",
                     "scheduled_t": 1719144660,
                     "data": {
                         "name":"SuperViperT302",
