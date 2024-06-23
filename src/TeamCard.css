@@ -37,9 +37,8 @@
     font-stretch: extra-condensed !important;
 }
 
-.team-progress {
-    font-size: small;
-    background-color: rgb(253, 232, 0);
+#team-progress {
+    font-size: x-small;
 }
 
 #black {

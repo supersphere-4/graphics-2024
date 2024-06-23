@@ -33,7 +33,7 @@ function TeamCard(props) {
                 <Container fluid>
                     <Row>
                         <Col xs={9} m={2} className="team-name">{teamName}</Col>
-                        <Col><Button variant="warning">{isTeamFinished ? "FINISHED" : "GAME " + (currRun + 1) + "/13"} </Button></Col>
+                        <Col><Button variant="warning" id="team-progress">{isTeamFinished ? "FINISHED" : "GAME " + (currRun + 1) + "/13"}</Button></Col>
                     </Row>
                 </Container>
             </CardHeader>
