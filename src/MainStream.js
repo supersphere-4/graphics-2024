@@ -3,14 +3,15 @@ import './MainStream.css'
 
 function MainStream(props) {
 
+    const team_num = props.team_num;
     const main = props.main;
-    const team = props.teams.find((team) => team.team_number == main);
+    const sub = props.sub;
+    const team = props.teams.find((team) => team.team_number == team_num);
     const currRun = Math.min(team.finished + props.runs[team.team_number - 1], 12);
     const currRunner = team.schedule.runs[currRun].data.name;
-    const src = "https://player.twitch.tv/?channel=" + currRunner + "&parent=localhost";
-
+    const src = "https://player.twitch.tv/?channel=" + currRunner + "&parent=localhost&muted=";
     return (
-        <Col className=""><iframe src={src} width="1520px" height="855px"></iframe></Col>
+        <iframe src={src + (team_num == sub ? "true" : "false")} width="800px" height="600px"></iframe>
     )
 }
 

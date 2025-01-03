@@ -1,8 +1,7 @@
 import './App.css';
-import teams from './data/teams_final.json';
+import teams from './data/teams_2025_jan.json';
 import runnerinfo from './data/runnerinfo.json';
 import MainStream from './MainStream';
-import Stream from './Stream';
 import Teams from './Team';
 import { useEffect, useState } from 'react';
 import { Button, Container, Row, Col, Fade } from 'react-bootstrap';
@@ -12,6 +11,7 @@ function App(props) {
     
     const [time, setTime] = useState(0);
     const [runsCompleted, setRunsCompleted] = useState([0, 0, 0, 0, 0]);
+    const team_count = 2;
 
     function MainStreamOverride(team_number) {
         if (runsCompleted.every(run => run >= 13)) {
@@ -61,58 +61,51 @@ function App(props) {
         <Container fluid>
             <Row className="mt-2">
                 <Col>
-                    <Button id="indigo" onClick={() => {MarkRunComplete(0)}}><span>Next Run</span></Button>
+                    <Button id="red" onClick={() => {MarkRunComplete(0)}}><span>Next Run</span></Button>
                 </Col>
                 <Col>
-                    <Button id="purple" onClick={() => {MarkRunComplete(1)}}><span>Next Run</span></Button>
-                </Col>
-                <Col>
-                    <Button id="green" onClick={() => {MarkRunComplete(2)}}><span>Next Run</span></Button>
-                </Col>
-                <Col>
-                    <Button id="blue" onClick={() => {MarkRunComplete(3)}}><span>Next Run</span></Button>
-                </Col>
-                <Col>
-                    <Button id="magenta" onClick={() => {MarkRunComplete(4)}}><span>Next Run</span></Button>
+                    <Button id="blue" onClick={() => {MarkRunComplete(1)}}><span>Next Run</span></Button>
                 </Col>
             </Row>
             <Row className="my-4">
                 <Col>
-                    <Button id="indigo" onClick={() => {MainStreamOverride(0)}}><span>Send Indigo to Main</span></Button>
+                    <Button id="red" onClick={() => {MainStreamOverride(0)}}><span>Team 1 Audio</span></Button>
                 </Col>
                 <Col>
-                    <Button id="purple" onClick={() => {MainStreamOverride(1)}}><span>Send Purple to Main</span></Button>
-                </Col>
-                <Col>
-                    <Button id="green" onClick={() => {MainStreamOverride(2)}}><span>Send Green to Main</span></Button>
-                </Col>
-                <Col>
-                    <Button id="blue" onClick={() => {MainStreamOverride(3)}}><span>Send Blue to Main</span></Button>
-                </Col>
-                <Col>
-                    <Button id="magenta" onClick={() => {MainStreamOverride(4)}}><span>Send Magenta to Main</span></Button>
+                    <Button id="blue" onClick={() => {MainStreamOverride(1)}}><span>Team 2 Audio</span></Button>
                 </Col>
             </Row>
             <Row>
-                <Col>
-                    <Teams teams={teams} runners={runnerinfo} main={time % 5 + 1} runs={runsCompleted}></Teams>
-                </Col>
-                <Col xs={9}>
-                    <MainStream teams={teams} runners={runnerinfo} main={time % 5 + 1} runs={runsCompleted}/>
+                <Col s={4}>
+                    <MainStream
+                        team_num={1}
+                        teams={teams}
+                        runners={runnerinfo}
+                        main={time % team_count + 1}
+                        sub={(time + 1) % team_count + 1}
+                        runs={runsCompleted}
+                    />
+                    <MainStream
+                            team_num={2}
+                            teams={teams}
+                            runners={runnerinfo}
+                            main={time % team_count + 1}
+                            sub={(time + 1) % team_count + 1}
+                            runs={runsCompleted}
+                        />
                 </Col>
             </Row>
             <Row>
-                <Col xs={6}></Col>
-                <Col>
-                    <Stream teams={teams} runners={runnerinfo} main={time % 5 + 1} runs={runsCompleted}/>
+                <Col s={6}>
+                    <MainTeamCard teams={teams} runners={runnerinfo} main={1} runs={runsCompleted}></MainTeamCard>
+                </Col>
+                <Col s={6}>
+                    <MainTeamCard teams={teams} runners={runnerinfo} main={2} runs={runsCompleted}></MainTeamCard>
                 </Col>
             </Row>
-            <Row>
-                <Col></Col>
-                <Col xs={9}>
-                    <MainTeamCard teams={teams} runners={runnerinfo} main={time % 5 + 1} runs={runsCompleted}></MainTeamCard>
-                </Col>
-            </Row>
+            <Col>
+                <Teams teams={teams} runners={runnerinfo} main={time % team_count + 1} runs={runsCompleted}></Teams>
+            </Col>
         </Container>
         
     );
