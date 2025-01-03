@@ -50,7 +50,7 @@ function App(props) {
     useEffect(() => {
         const interval = setInterval(() => {
             setTime(prevTime => prevTime + 1);
-        }, 600000);
+        }, 450000);
 
         return () => {
             clearInterval(interval);
