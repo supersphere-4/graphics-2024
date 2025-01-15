@@ -1,6 +1,7 @@
-import { Button, Card, CardHeader, ProgressBar, Container, Row, Col, CardBody } from "react-bootstrap";
+import { Image, Button, Card, CardHeader, ProgressBar, Container, Row, Col, CardBody, CardText } from "react-bootstrap";
 import { useEffect, useState } from "react";
 import './TeamCard.css'
+import games from './data/games.json'
 
 function TeamCard(props) {
 
@@ -10,8 +11,8 @@ function TeamCard(props) {
     const currGame = props.team.schedule.runs[currRun].data.game;
     const currRunner = props.team.schedule.runs[currRun].data.name;
     const currRunnerPronouns = props.runners.find((runner) => {return runner.name === currRunner}).pronouns;
-    const start = new Date(props.team.schedule.runs[currRun].scheduled);
-    const end = new Date(start.getTime() + props.team.schedule.runs[currRun].length_t*1000);
+    const start = new Date(props.team.schedule.runs[currRun].start_t);
+    const end = new Date(props.team.schedule.runs[currRun].end_t);
 
     const [time, setTime] = useState(new Date());
     const [currRunTime, setCurrRunTime] = useState((time - start) / (end - start) * 100);
@@ -25,25 +26,29 @@ function TeamCard(props) {
         return () => {
             clearInterval(interval);
         };
-    }, [time, start, end])
+    }, [time, start, end]);
+
+    const gameOrder = props.team.schedule.runs.map((run) => run.data.game);
+    games.sort((game1, game2) => gameOrder.indexOf(game1[0]) - gameOrder.indexOf(game2[0]));
+    const gamesCompleted = games.map((game) => {
+            let src = "/game_logos/" + game[1] + ".png";
+            return <Image src={src} height="64px" width="72px" fluid></Image>
+        });
 
     return (
-        <Card className="team-card" style={{ width: '38rem'}} border="light">
+        <Card className="team-card" border="dark" style={{ width: '40em' }} fluid>
             <CardHeader id={props.team.team_number !== props.main ? props.team.team_color : "black"}>
                 <Container fluid>
                     <Row>
-                        <Col xs={9} m={2} className="team-name">{teamName}</Col>
-                        <Col><Button variant="warning" id="team-progress">{isTeamFinished ? "FINISHED" : "GAME " + (currRun + 1) + "/13"}</Button></Col>
+                    <Col>{currRunner}</Col>
+                    <Col><Button variant="success" size="sm" className={currRunnerPronouns === "" ? "no-pronouns" : "ms-3 mb-1"} id="pronouns">{currRunnerPronouns}</Button></Col>
+                    <Col><span className={"material-symbols-outlined"}>{props.main === props.team.team_number ? "volume_up" : ""}</span></Col>
                     </Row>
                 </Container>
             </CardHeader>
             <CardBody id={props.team.team_color}>
-                <Container>
-                        <Row>
-                            <Col>{currRunner}<Button variant="danger" size="sm" className={currRunnerPronouns === "" ? "no-pronouns" : "ms-3 mb-1"} id="pronouns">{currRunnerPronouns}</Button></Col>
-                        </Row>
-                        <Row><span>{currGame}</span></Row>
-                        <Row><div><ProgressBar className="" aria-label="run-progress" variant="warning" now={currRunTime} style={{height:"0.4rem"}}/></div></Row>
+                <Container fluid>
+                    <Row><Col>Estimate: NULL</Col></Row>
                 </Container>
             </CardBody>
         </Card>

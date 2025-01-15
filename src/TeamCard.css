@@ -1,13 +1,12 @@
 .team-card {
     font-size: x-large;
-    text-shadow: 2px 1px 6px black;
+    text-shadow: 3px 1px 6px black;
     color:white !important;
     border: 3cm black;
-    border-radius: 4rem;
 }
 
 .main-card {
-    font-size: 52px;
+    font-size: 48px;
 }
 
 .no-pronouns {
@@ -26,19 +25,22 @@
 
 .pronouns {
     font-size: x-small;
-    background-color: red;
+    background-color: rgb(29, 248, 0);
 }
 
 #team-name {
-    align-self:flex-start;
     font-family: 'Encode Sans Condensed Bold Regular';
     font-weight: bolder;
     font-size:medium;
     font-stretch: extra-condensed !important;
 }
 
+/* .material-symbols-outlined {
+    font-size:32px
+} */
+
 #team-progress {
-    font-size: x-small;
+    font-size: large;
 }
 
 #black {

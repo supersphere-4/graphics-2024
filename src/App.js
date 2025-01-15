@@ -4,7 +4,7 @@ import runnerinfo from './data/runnerinfo.json';
 import MainStream from './MainStream';
 import Teams from './Team';
 import { useEffect, useState } from 'react';
-import { Button, Container, Row, Col, Fade } from 'react-bootstrap';
+import { Button, Container, Row, Col, Fade, Stack } from 'react-bootstrap';
 import MainTeamCard from './MainTeamCard';
 
 function App(props) {
@@ -58,25 +58,9 @@ function App(props) {
     }, [time])
 
     return (
-        <Container fluid>
-            <Row className="mt-2">
-                <Col>
-                    <Button id="red" onClick={() => {MarkRunComplete(0)}}><span>Next Run</span></Button>
-                </Col>
-                <Col>
-                    <Button id="blue" onClick={() => {MarkRunComplete(1)}}><span>Next Run</span></Button>
-                </Col>
-            </Row>
-            <Row className="my-4">
-                <Col>
-                    <Button id="red" onClick={() => {MainStreamOverride(0)}}><span>Team 1 Audio</span></Button>
-                </Col>
-                <Col>
-                    <Button id="blue" onClick={() => {MainStreamOverride(1)}}><span>Team 2 Audio</span></Button>
-                </Col>
-            </Row>
+        <Stack>
             <Row>
-                <Col s={4}>
+                <Col>
                     <MainStream
                         team_num={1}
                         teams={teams}
@@ -85,28 +69,36 @@ function App(props) {
                         sub={(time + 1) % team_count + 1}
                         runs={runsCompleted}
                     />
+                </Col>
+                <Col>
                     <MainStream
-                            team_num={2}
-                            teams={teams}
-                            runners={runnerinfo}
-                            main={time % team_count + 1}
-                            sub={(time + 1) % team_count + 1}
-                            runs={runsCompleted}
-                        />
+                        team_num={2}
+                        teams={teams}
+                        runners={runnerinfo}
+                        main={time % team_count + 1}
+                        sub={(time + 1) % team_count + 1}
+                        runs={runsCompleted}
+                    />
                 </Col>
             </Row>
-            <Row>
-                <Col s={6}>
-                    <MainTeamCard teams={teams} runners={runnerinfo} main={1} runs={runsCompleted}></MainTeamCard>
-                </Col>
-                <Col s={6}>
-                    <MainTeamCard teams={teams} runners={runnerinfo} main={2} runs={runsCompleted}></MainTeamCard>
-                </Col>
-            </Row>
-            <Col>
+            <Stack direction="horizontal">
+            <MainTeamCard teams={teams} runners={runnerinfo} main={time % team_count + 1} card_number={1} runs={runsCompleted}></MainTeamCard>
+            <MainTeamCard teams={teams} runners={runnerinfo} main={2} card_number={2} runs={runsCompleted}></MainTeamCard>
+            </Stack>
+            <Stack direction='horizontal' gap={3}>
                 <Teams teams={teams} runners={runnerinfo} main={time % team_count + 1} runs={runsCompleted}></Teams>
-            </Col>
-        </Container>
+            </Stack>
+            <Row>
+                <Col className='d-grid gap-2'>
+                    <Button id="red" onClick={() => {MarkRunComplete(0)}}><span>Next Run</span></Button>
+                    <Button id="purple" onClick={() => {MarkRunComplete(1)}}><span>Next Run</span></Button>
+                </Col>
+                <Col className='d-grid gap-2'>
+                    <Button id="red" onClick={() => {MainStreamOverride(0)}}><span>irl_1545 Audio</span></Button>
+                    <Button id="purple" onClick={() => {MainStreamOverride(1)}}><span>Purple Idiots Audio</span></Button>
+                </Col>
+            </Row>
+        </Stack>
         
     );
 }

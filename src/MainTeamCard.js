@@ -5,7 +5,7 @@ import games from './data/games.json'
 
 function MainTeamCard(props) {
 
-    const team = props.teams.find((team)=> {return team.team_number === props.main});
+    const team = props.teams.find((team)=> {return team.team_number === props.card_number});
     const teamName = team.team_name;
     const isTeamFinished = team.finished + props.runs[team.team_number - 1] == 13;
     const currRun = Math.min(12, team.finished + props.runs[team.team_number - 1]);
@@ -18,7 +18,7 @@ function MainTeamCard(props) {
     games.sort((game1, game2) => gameOrder.indexOf(game1[0]) - gameOrder.indexOf(game2[0]));
     const gamesCompleted = games.map((game) => {
             let src = "/game_logos/" + game[1] + ".png";
-            return <div><Image src={src} width="128px" className={isTeamFinished || currRun > gameOrder.indexOf(game[0]) ? "complete" : currRun == gameOrder.indexOf(game[0]) ? "in-progress" : "incomplete"}></Image></div>
+            return <div><Image src={src} width="68px" className={isTeamFinished || currRun > gameOrder.indexOf(game[0]) ? "complete" : currRun == gameOrder.indexOf(game[0]) ? "in-progress" : "incomplete"}></Image></div>
         }
     )
         
@@ -39,14 +39,9 @@ function MainTeamCard(props) {
     }, [time, start, end]);
 
     return (
-        <Card className="team-card main-card" style={{ width: '112rem' }}>
-            <CardHeader id={team.team_color}>
-                <Container fluid>
-                    <Row>
-                        <Col xs={12} className="team-name flex flex-grow">{teamName}</Col>
-                        {/* <Col s><Button size="sm" variant="warning" className="">{currRun}/13</Button></Col> */}
-                    </Row>
-                </Container>
+        <Card className="team-card main-card" style={{ width: '20em' }} fluid>
+            <CardHeader id={team.team_color} className="team-name">
+                {teamName}
             </CardHeader>
             <CardFooter id="black">
                 <Stack direction="horizontal">

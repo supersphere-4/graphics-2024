@@ -10,8 +10,9 @@ function MainStream(props) {
     const currRun = Math.min(team.finished + props.runs[team.team_number - 1], 12);
     const currRunner = team.schedule.runs[currRun].data.name;
     const src = "https://player.twitch.tv/?channel=" + currRunner + "&parent=localhost&muted=";
+
     return (
-        <iframe src={src + (team_num == sub ? "true" : "false")} width="800px" height="600px"></iframe>
+        <iframe src={src + (team_num == sub ? "true" : "false")} width="944px" height="531px"></iframe>
     )
 }
 
