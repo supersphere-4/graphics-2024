@@ -17,6 +17,8 @@ function TeamCard(props) {
     const [time, setTime] = useState(new Date());
     const [currRunTime, setCurrRunTime] = useState((time - start) / (end - start) * 100);
 
+    const est_time = new Date(props.team.schedule.runs[currRun].estimate * 1000).toUTCString().split(" ")[4];
+
     useEffect(() => {
         const interval = setInterval(() => {
             setTime(prevTime => new Date());
@@ -32,23 +34,28 @@ function TeamCard(props) {
     games.sort((game1, game2) => gameOrder.indexOf(game1[0]) - gameOrder.indexOf(game2[0]));
     const gamesCompleted = games.map((game) => {
             let src = "/game_logos/" + game[1] + ".png";
-            return <Image src={src} height="64px" width="72px" fluid></Image>
+            return <Image src={src} width="40rem" fluid></Image>
         });
 
     return (
-        <Card className="team-card" border="dark" style={{ width: '40em' }} fluid>
+        <Card className="team-card m-4" border="dark" style={{ width: '18em' }} fluid>
             <CardHeader id={props.team.team_number !== props.main ? props.team.team_color : "black"}>
                 <Container fluid>
                     <Row>
+                    <Col className={"material-symbols-outlined mt-2"}>{props.main === props.team.team_number ? "volume_up" : ""}</Col>
                     <Col>{currRunner}</Col>
                     <Col><Button variant="success" size="sm" className={currRunnerPronouns === "" ? "no-pronouns" : "ms-3 mb-1"} id="pronouns">{currRunnerPronouns}</Button></Col>
-                    <Col><span className={"material-symbols-outlined"}>{props.main === props.team.team_number ? "volume_up" : ""}</span></Col>
                     </Row>
                 </Container>
             </CardHeader>
             <CardBody id={props.team.team_color}>
                 <Container fluid>
-                    <Row><Col>Estimate: NULL</Col></Row>
+                    <Row>
+                        <Col>{currGame}</Col>
+                    </Row>
+                    <Row>
+                        <Col>Estimate: {est_time}</Col>
+                        </Row>
                 </Container>
             </CardBody>
         </Card>

@@ -33,10 +33,10 @@ function App(props) {
             function() {
                 const newRunsCompleted = runsCompleted;
                 newRunsCompleted[team_number] = Math.min(13, newRunsCompleted[team_number] + 1);
-                setTime(time + 5);
                 return newRunsCompleted;
             }
         )
+        setTime(time + 1);
         if (runsCompleted[team_number] == 13) {
             console.log(runsCompleted);
             console.error("Team " + team_number + " already finished!");
@@ -81,12 +81,12 @@ function App(props) {
                     />
                 </Col>
             </Row>
+            <Stack direction='horizontal' gap={4}>
+                <Teams teams={teams} runners={runnerinfo} main={time % team_count + 1} runs={runsCompleted}></Teams>
+            </Stack>
             <Stack direction="horizontal">
             <MainTeamCard teams={teams} runners={runnerinfo} main={time % team_count + 1} card_number={1} runs={runsCompleted}></MainTeamCard>
-            <MainTeamCard teams={teams} runners={runnerinfo} main={2} card_number={2} runs={runsCompleted}></MainTeamCard>
-            </Stack>
-            <Stack direction='horizontal' gap={3}>
-                <Teams teams={teams} runners={runnerinfo} main={time % team_count + 1} runs={runsCompleted}></Teams>
+            <MainTeamCard teams={teams} runners={runnerinfo} main={time % team_count + 1} card_number={2} runs={runsCompleted}></MainTeamCard>
             </Stack>
             <Row>
                 <Col className='d-grid gap-2'>

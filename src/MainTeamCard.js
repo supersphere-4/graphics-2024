@@ -39,9 +39,9 @@ function MainTeamCard(props) {
     }, [time, start, end]);
 
     return (
-        <Card className="team-card main-card" style={{ width: '20em' }} fluid>
+        <Card className="team-card main-card mb-2" style={{ width: '20em' }} fluid>
             <CardHeader id={team.team_color} className="team-name">
-                {teamName}
+                <div className="text-center">{teamName}</div>
             </CardHeader>
             <CardFooter id="black">
                 <Stack direction="horizontal">

@@ -19,10 +19,10 @@
             {
                 "start_t":"",
                 "end_t":"",
-                "estimate":3600,
+                "estimate":3300,
                 "data": {
-                    "name":"TheSadgeBean",
-                    "game":"Crash Bandicoot 2: Cortex Strikes Back"
+                    "name":"SuperViperT302",
+                    "game":"Super Mario 64"
                 }
             },
             {
@@ -37,10 +37,19 @@
             {
                 "start_t":"",
                 "end_t":"",
-                "estimate":4200,
+                "estimate":11100,
+                "data": {
+                    "name":"SuperViperT302",
+                    "game":"Super Mario Galaxy 2"
+                }
+            },
+            {
+                "start_t":"",
+                "end_t":"",
+                "estimate":3600,
                 "data": {
                     "name":"TheSadgeBean",
-                    "game":"Crash Bandicoot: WARPED"
+                    "game":"Crash Bandicoot 2: Cortex Strikes Back"
                 }
             },
             {
@@ -55,19 +64,10 @@
             {
                 "start_t":"",
                 "end_t":"",
-                "estimate":3300,
+                "estimate":4200,
                 "data": {
-                    "name":"SuperViperT302",
-                    "game":"Super Mario 64"
-                }
-            },
-            {
-                "start_t":"",
-                "end_t":"",
-                "estimate":11100,
-                "data": {
-                    "name":"SuperViperT302",
-                    "game":"Super Mario Galaxy 2"
+                    "name":"TheSadgeBean",
+                    "game":"Crash Bandicoot: WARPED"
                 }
             },
             {
@@ -137,18 +137,72 @@
         "schedule": {
             "runs": [
                 {
-                    "start_t":"2025-01-18T05:00:00-07:00",
+                    "start_t":"",
                     "end_t":"",
-                    "estimate":4200,
+                    "estimate":3300,
                     "data": {
-                        "name":"PlayerGameSK",
-                        "game":"Spyro 2: Ripto's Rage!"
+                        "name":"CostilerAphid18",
+                        "game":"Super Mario 64"
                     }
                 },
                 {
                     "start_t":"",
                     "end_t":"",
-                    "estimate":3600,
+                    "estimate":10800,
+                    "data": {
+                        "name":"CostilerAphid18",
+                        "game":"Super Mario Galaxy"
+                    }
+                },
+                {
+                    "start_t":"",
+                    "end_t":"",
+                    "estimate":3720,
+                    "data": {
+                        "name":"ThrasherDBS",
+                        "game":"Spyro the Dragon"
+                    }
+                },
+                {
+                    "start_t":"",
+                    "end_t":"",
+                    "estimate":6600,
+                    "data": {
+                        "name":"Calumj28",
+                        "game":"Super Mario Sunshine"
+                    }
+                },
+                {
+                    "start_t":"",
+                    "end_t":"",
+                    "estimate":12000,
+                    "data": {
+                        "name":"SNRobi",
+                        "game":"Super Mario Galaxy 2"
+                    }
+                },
+                {
+                    "start_t":"",
+                    "end_t":"",
+                    "estimate":7800,
+                    "data": {
+                        "name":"Znernicus",
+                        "game":"Donkey Kong 64"
+                    }
+                },
+                {
+                    "start_t":"",
+                    "end_t":"",
+                    "estimate":6000,
+                    "data": {
+                        "name":"TSRStormed",
+                        "game":"Banjo-Kazooie"
+                    }
+                },
+                {
+                    "start_t":"",
+                    "end_t":"",
+                    "estimate":3000,
                     "data": {
                         "name":"Dereklander",
                         "game":"Crash Bandicoot 2: Cortex Strikes Back"
@@ -166,73 +220,10 @@
                 {
                     "start_t":"",
                     "end_t":"",
-                    "estimate":4200,
+                    "estimate":3000,
                     "data": {
                         "name":"Dereklander",
                         "game":"Crash Bandicoot: WARPED"
-                    }
-                },
-                {
-                    "start_t":"",
-                    "end_t":"",
-                    "estimate":6000,
-                    "data": {
-                        "name":"SNRobi",
-                        "game":"Super Mario Sunshine"
-                    }
-                },
-                {
-                    "start_t":"",
-                    "end_t":"",
-                    "estimate":3300,
-                    "data": {
-                        "name":"CostilerAphid18",
-                        "game":"Super Mario 64"
-                    }
-                },
-                {
-                    "start_t":"",
-                    "end_t":"",
-                    "estimate":11100,
-                    "data": {
-                        "name":"SNRobi",
-                        "game":"Super Mario Galaxy 2"
-                    }
-                },
-                {
-                    "start_t":"",
-                    "end_t":"",
-                    "estimate":9000,
-                    "data": {
-                        "name":"SNRobi",
-                        "game":"Super Mario Galaxy"
-                    }
-                },
-                {
-                    "start_t":"",
-                    "end_t":"",
-                    "estimate":7800,
-                    "data": {
-                        "name":"Znernicus",
-                        "game":"Donkey Kong 64"
-                    }
-                },
-                {
-                    "start_t":"",
-                    "end_t":"",
-                    "estimate":2700,
-                    "data": {
-                        "name":"ThrasherDBS",
-                        "game":"Spyro the Dragon"
-                    }
-                },
-                {
-                    "start_t":"",
-                    "end_t":"",
-                    "estimate":5400,
-                    "data": {
-                        "name":"TSRStormed",
-                        "game":"Banjo-Kazooie"
                     }
                 },
                 {
@@ -247,10 +238,19 @@
                 {
                     "start_t":"",
                     "end_t":"",
-                    "estimate":12600,
+                    "estimate":10800,
                     "data": {
                         "name":"TSRStormed",
                         "game":"Banjo-Tooie"
+                    }
+                },
+                {
+                    "start_t":"2025-01-18T05:00:00-07:00",
+                    "end_t":"",
+                    "estimate":3600,
+                    "data": {
+                        "name":"PlayerGameSK",
+                        "game":"Spyro 2: Ripto's Rage!"
                     }
                 }
             ]
