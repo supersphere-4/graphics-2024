@@ -13,6 +13,7 @@
                 "estimate":4200,
                 "data": {
                     "name":"DanielDavidson",
+                    "twitch_name":"danieldavidson_",
                     "game":"Spyro 2: Ripto's Rage!"
                 }
             },
@@ -31,6 +32,7 @@
                 "estimate":3600,
                 "data": {
                     "name":"DanielDavidson",
+                    "twitch_name":"danieldavidson_",
                     "game":"Spyro: Year of the Dragon"
                 }
             },
@@ -85,6 +87,7 @@
                 "estimate":7800,
                 "data": {
                     "name":"ChristianVega64",
+                    "twitch_name":"christianvegasixty4",
                     "game":"Donkey Kong 64"
                 }
             },
@@ -205,6 +208,7 @@
                     "estimate":3000,
                     "data": {
                         "name":"Dereklander",
+                        "twitch_name":"Dereklands",
                         "game":"Crash Bandicoot 2: Cortex Strikes Back"
                     }
                 },
@@ -214,6 +218,7 @@
                     "estimate":3000,
                     "data": {
                         "name":"Dereklander",
+                        "twitch_name":"Dereklands",
                         "game":"Crash Bandicoot: WARPED"
                     }
                 },
@@ -223,6 +228,7 @@
                     "estimate":3000,
                     "data": {
                         "name":"Dereklander",
+                        "twitch_name":"Dereklands",
                         "game":"Crash Bandicoot"
                     }
                 },
@@ -232,6 +238,7 @@
                     "estimate":3600,
                     "data": {
                         "name":"Dereklander",
+                        "twitch_name":"Dereklands",
                         "game":"Spyro: Year of the Dragon"
                     }
                 },
