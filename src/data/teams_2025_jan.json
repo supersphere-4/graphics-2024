@@ -20,15 +20,6 @@
             {
                 "start_t":"",
                 "end_t":"",
-                "estimate":3300,
-                "data": {
-                    "name":"SuperViperT302",
-                    "game":"Super Mario 64"
-                }
-            },
-            {
-                "start_t":"",
-                "end_t":"",
                 "estimate":3600,
                 "data": {
                     "name":"DanielDavidson",
@@ -48,6 +39,15 @@
             {
                 "start_t":"",
                 "end_t":"",
+                "estimate":6000,
+                "data": {
+                    "name":"CheesySRC",
+                    "game":"Super Mario Sunshine"
+                }
+            },
+            {
+                "start_t":"",
+                "end_t":"",
                 "estimate":3600,
                 "data": {
                     "name":"TheSadgeBean",
@@ -57,10 +57,10 @@
             {
                 "start_t":"",
                 "end_t":"",
-                "estimate":6000,
+                "estimate":3300,
                 "data": {
-                    "name":"CheesySRC",
-                    "game":"Super Mario Sunshine"
+                    "name":"SuperViperT302",
+                    "game":"Super Mario 64"
                 }
             },
             {
@@ -142,19 +142,19 @@
                 {
                     "start_t":"",
                     "end_t":"",
-                    "estimate":3900,
+                    "estimate":10500,
                     "data": {
                         "name":"CostilerAphid18",
-                        "game":"Super Mario 64"
+                        "game":"Super Mario Galaxy"
                     }
                 },
                 {
                     "start_t":"",
                     "end_t":"",
-                    "estimate":10500,
+                    "estimate":3900,
                     "data": {
                         "name":"CostilerAphid18",
-                        "game":"Super Mario Galaxy"
+                        "game":"Super Mario 64"
                     }
                 },
                 {
