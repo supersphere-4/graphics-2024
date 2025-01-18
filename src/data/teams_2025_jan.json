@@ -139,7 +139,7 @@
                 {
                     "start_t":"",
                     "end_t":"",
-                    "estimate":3300,
+                    "estimate":3900,
                     "data": {
                         "name":"CostilerAphid18",
                         "game":"Super Mario 64"
@@ -148,7 +148,7 @@
                 {
                     "start_t":"",
                     "end_t":"",
-                    "estimate":10800,
+                    "estimate":10500,
                     "data": {
                         "name":"CostilerAphid18",
                         "game":"Super Mario Galaxy"
@@ -157,7 +157,7 @@
                 {
                     "start_t":"",
                     "end_t":"",
-                    "estimate":3720,
+                    "estimate":3600,
                     "data": {
                         "name":"ThrasherDBS",
                         "game":"Spyro the Dragon"
@@ -166,7 +166,7 @@
                 {
                     "start_t":"",
                     "end_t":"",
-                    "estimate":6600,
+                    "estimate":6000,
                     "data": {
                         "name":"Calumj28",
                         "game":"Super Mario Sunshine"
@@ -184,7 +184,7 @@
                 {
                     "start_t":"",
                     "end_t":"",
-                    "estimate":7800,
+                    "estimate":7500,
                     "data": {
                         "name":"Znernicus",
                         "game":"Donkey Kong 64"
@@ -193,7 +193,7 @@
                 {
                     "start_t":"",
                     "end_t":"",
-                    "estimate":6000,
+                    "estimate":6300,
                     "data": {
                         "name":"TSRStormed",
                         "game":"Banjo-Kazooie"
@@ -206,15 +206,6 @@
                     "data": {
                         "name":"Dereklander",
                         "game":"Crash Bandicoot 2: Cortex Strikes Back"
-                    }
-                },
-                {
-                    "start_t":"",
-                    "end_t":"",
-                    "estimate":3600,
-                    "data": {
-                        "name":"Dereklander",
-                        "game":"Spyro: Year of the Dragon"
                     }
                 },
                 {
@@ -238,7 +229,16 @@
                 {
                     "start_t":"",
                     "end_t":"",
-                    "estimate":10800,
+                    "estimate":3600,
+                    "data": {
+                        "name":"Dereklander",
+                        "game":"Spyro: Year of the Dragon"
+                    }
+                },
+                {
+                    "start_t":"",
+                    "end_t":"",
+                    "estimate":10500,
                     "data": {
                         "name":"TSRStormed",
                         "game":"Banjo-Tooie"
