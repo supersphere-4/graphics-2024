@@ -1,116 +1,143 @@
 import './App.css';
-import teams from './data/teams_final.json';
-import runnerinfo from './data/runnerinfo.json';
+import teams from './data/teams_new.json';
+import runnerinfo from './data/runnerinfo_new.json';
 import MainStream from './MainStream';
 import Stream from './Stream';
+import TeamControl from './TeamControl';
 import Teams from './Team';
 import { useEffect, useState } from 'react';
-import { Button, Container, Row, Col, Fade } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import MainTeamCard from './MainTeamCard';
 
 function App(props) {
     
     const [time, setTime] = useState(0);
-    const [runsCompleted, setRunsCompleted] = useState([0, 0, 0, 0, 0]);
+    const [main, setMain] = useState(1);
+    const [runsCompleted, setRunsCompleted] = useState(teams.map((team) => team.finished));
+
+    const minutes = 12;
+
+    function refreshStream(team, main) {
+        const currRun = runsCompleted[team.team_number - 1] + 1;
+        if (currRun > 13 || currRun < 0) {
+            console.error("This team is already finished!");
+            return;
+        }
+
+        let stream = document.querySelector("iframe.team" + team.team_number);
+        const run = team.schedule.run_order.indexOf(currRun)
+        const currRunner = team.schedule.runs[run].name;
+        const src = "https://player.twitch.tv/?channel=" + currRunner + "&parent=localhost" + (team.team_number === main ? '' : "&muted=true");
+        stream.src = src;
+    }
+
+    function disableButton(seconds, team_number, team_color) {
+        MarkRunComplete(team_number, team_color)
+        let buttons = document.querySelectorAll('button#' + team_color + ':not(#pronouns):not(#team-progress)');
+        for (let b of buttons) {
+            b.disabled = true
+        }
+        if (true) {
+            setTimeout(function() {
+                for (let b of buttons) {
+                    b.disabled = false
+                }
+            }, seconds * 1000);
+        }
+    }
 
     function MainStreamOverride(team_number) {
         if (runsCompleted.every(run => run >= 13)) {
-            console.error("The relay race is over!");
+            console.error("This relay is over!");
             return;
         }
-        if (runsCompleted[team_number] == 13) {
+        if (runsCompleted[team_number - 1] >= 13) {
             console.error("This team is already finished!");
-            console.warn(runsCompleted);
-            const newMain = runsCompleted.findIndex((run) => run < 13);
-            setTime(newMain > -1 ? newMain : time);
             return;
         }
-        setTime(team_number);
+        setMain(team_number);
     }
 
-    function MarkRunComplete(team_number) {
-        setRunsCompleted(
+    function MarkRunComplete(team_number, team_color) {
+
+        if (runsCompleted.every(run => run >= 13)) {
+            return;
+        }
+        if (runsCompleted[team_number - 1] >= 12) {
+            let buttons = document.querySelectorAll('button#' + team_color);
+            for (let b of buttons) {
+                b.disabled = true;
+            }
+        }
+        setRunsCompleted (
             function() {
                 const newRunsCompleted = runsCompleted;
-                newRunsCompleted[team_number] = Math.min(13, newRunsCompleted[team_number] + 1);
-                setTime(time + 5);
+                newRunsCompleted[team_number - 1] = runsCompleted[team_number - 1] + 1;
                 return newRunsCompleted;
             }
         )
-        if (runsCompleted[team_number] == 13) {
-            console.log(runsCompleted);
-            console.error("Team " + team_number + " already finished!");
-            const newMain = runsCompleted.findIndex((run) => run < 13);
-            setTime(newMain > -1 ? newMain : time);
-            console.warn("Set main stream to Team " + time);
+        if (main == team_number) {
+            getNewMain();
         }
-        console.warn(runsCompleted);
+        if (runsCompleted[team_number - 1] >= 13) {
+            return;
+        }
+    }
+
+    function getNewMain() {
+        const newMain = runsCompleted.findIndex((run) => run === Math.min(...runsCompleted)) + 1;
+        setMain(newMain);
     }
 
     useEffect(() => {
         const interval = setInterval(() => {
             setTime(prevTime => prevTime + 1);
-        }, 600000);
+        }, minutes * 60000);
 
         return () => {
             clearInterval(interval);
+            let newMain = (time) % runsCompleted.length + 1;
+            if (runsCompleted.filter((run) => run < 13).length > 1) {
+                setMain((time) % runsCompleted.length + 1);
+            }
+            if (runsCompleted[newMain - 1] >= 13) {
+                let i = 1;
+                while (runsCompleted[newMain - 1] >= 13) {
+                    if (i > 10) break;
+                    setMain((time + i) % runsCompleted.length + 1);
+                    i++;
+                }
+            }
         };
     }, [time])
 
+    
+
     return (
         <Container fluid>
-            <Row className="mt-2">
+            <Row className="my-4">
+                <TeamControl main={main} teams={teams} runs={runsCompleted} callback1={disableButton} callback2={MainStreamOverride} callback3={refreshStream}></TeamControl>
+            </Row>
+            <Row>
                 <Col>
-                    <Button id="indigo" onClick={() => {MarkRunComplete(0)}}><span>Next Run</span></Button>
-                </Col>
-                <Col>
-                    <Button id="purple" onClick={() => {MarkRunComplete(1)}}><span>Next Run</span></Button>
-                </Col>
-                <Col>
-                    <Button id="green" onClick={() => {MarkRunComplete(2)}}><span>Next Run</span></Button>
-                </Col>
-                <Col>
-                    <Button id="blue" onClick={() => {MarkRunComplete(3)}}><span>Next Run</span></Button>
-                </Col>
-                <Col>
-                    <Button id="magenta" onClick={() => {MarkRunComplete(4)}}><span>Next Run</span></Button>
+                    <Teams teams={teams} runners={runnerinfo} main={main} runs={runsCompleted}></Teams>
                 </Col>
             </Row>
             <Row className="my-4">
-                <Col>
-                    <Button id="indigo" onClick={() => {MainStreamOverride(0)}}><span>Send Indigo to Main</span></Button>
-                </Col>
-                <Col>
-                    <Button id="purple" onClick={() => {MainStreamOverride(1)}}><span>Send Purple to Main</span></Button>
-                </Col>
-                <Col>
-                    <Button id="green" onClick={() => {MainStreamOverride(2)}}><span>Send Green to Main</span></Button>
-                </Col>
-                <Col>
-                    <Button id="blue" onClick={() => {MainStreamOverride(3)}}><span>Send Blue to Main</span></Button>
-                </Col>
-                <Col>
-                    <Button id="magenta" onClick={() => {MainStreamOverride(4)}}><span>Send Magenta to Main</span></Button>
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                    <Teams teams={teams} runners={runnerinfo} main={time % 5 + 1} runs={runsCompleted}></Teams>
-                </Col>
                 <Col xs={9}>
-                    <MainStream teams={teams} runners={runnerinfo} main={time % 5 + 1} runs={runsCompleted}/>
+                    <MainStream teams={teams} runners={runnerinfo} main={main} runs={runsCompleted}/>
                 </Col>
             </Row>
-            <Row>
+            <Row className="mt-4">
                 <Col xs={6}></Col>
                 <Col>
-                    <Stream teams={teams} runners={runnerinfo} main={time % 5 + 1} runs={runsCompleted}/>
+                    <Stream teams={teams} runners={runnerinfo} main={main} runs={runsCompleted}/>
                 </Col>
             </Row>
-            <Row>
+            <Row className="my-4">
                 <Col></Col>
                 <Col xs={9}>
-                    <MainTeamCard teams={teams} runners={runnerinfo} main={time % 5 + 1} runs={runsCompleted}></MainTeamCard>
+                    <MainTeamCard teams={teams} runners={runnerinfo} main={main} runs={runsCompleted}></MainTeamCard>
                 </Col>
             </Row>
         </Container>

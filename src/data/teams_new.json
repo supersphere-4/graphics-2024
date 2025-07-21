@@ -1,0 +1,441 @@
+[
+
+{
+    "team_name":"Orange Ducks of Various Sizes",
+    "team_color":"orange",
+    "team_number": 1,
+    "finished":0,
+    "schedule": {
+        "run_order":[
+            8, 5, 11, 6,
+            4, 10, 12,
+            2, 13, 9,
+            3, 7, 1
+        ],
+        "runs": [
+            {
+                "name":"druzspeedruns",
+                "twitch_name":"",
+                "game": "Super Mario 64",
+
+                "start_time":"2025-07-26T16:50:00-07:00",
+                "estimate":"PT1H55M",
+                "actual":""
+            },
+
+            {
+                "name":"SheilaSlays",
+                "twitch_name":"",
+                "game": "Super Mario Sunshine",
+
+                "start_time":"2025-07-26T01:30:00-07:00",
+                "estimate":"PT3H40M",
+                "actual":""
+            },
+
+            {
+                "name":"SNRobi",
+                "twitch_name":"",
+                "game": "Super Mario Galaxy",
+
+                "start_time":"2025-07-27T02:55:00-07:00",
+                "estimate":"PT6H40M",
+                "actual":""
+            },
+
+            {
+                "name":"SuperViperT302",
+                "twitch_name":"",
+                "game": "Super Mario Galaxy 2",
+
+                "start_time":"2025-07-26T05:10:00-07:00",
+                "estimate":"PT9H25M",
+                "actual":""
+            },
+
+            {
+                "name":"TySoN78_MK",
+                "twitch_name":"",
+                "game": "Banjo-Kazooie",
+
+                "start_time":"2025-07-25T23:25:00-07:00",
+                "estimate":"PT2H05M",
+                "actual":""
+            },
+
+            {
+                "name":"Ad129",
+                "twitch_name":"Ad129",
+                "game": "Banjo-Tooie",
+
+                "start_time":"2025-07-26T22:00:00-07:00",
+                "estimate":"PT4H55M",
+                "actual":""
+            },
+
+            {
+                "name":"Bismuth9",
+                "twitch_name":"",
+                "game": "Donkey Kong 64",
+
+                "start_time":"2025-07-27T09:35:00-07:00",
+                "estimate":"PT5H50M",
+                "actual":""
+            },
+
+            {
+                "name":"KylieKyubi",
+                "twitch_name":"",
+                "game": "Crash Bandicoot",
+
+                "start_time":"2025-07-25T20:30:00-07:00",
+                "estimate":"PT1H15M",
+                "actual":""
+            },
+
+            {
+                "name":"KylieKyubi",
+                "twitch_name":"",
+                "game": "Crash Bandicoot 2: Cortex Strikes Back",
+
+                "start_time":"2025-07-27T15:25:00-07:00",
+                "estimate":"PT1H20M",
+                "actual":""
+            },
+
+            {
+                "name":"KylieKyubi",
+                "twitch_name":"",
+                "game": "Crash Bandicoot: WARPED",
+
+                "start_time":"2025-07-26T19:45:00-07:00",
+                "estimate":"PT2H15M",
+                "actual":""
+            },
+
+            {
+                "name":"aldeezy1",
+                "twitch_name":"",
+                "game": "Spyro the Dragon",
+
+                "start_time":"2025-07-25T21:50:00-07:00",
+                "estimate":"PT1H35M",
+                "actual":""
+            },
+
+            {
+                "name":"aldeezy1",
+                "twitch_name":"",
+                "game": "Spyro 2: Ripto's Rage!",
+
+                "start_time":"2025-07-26T14:35:00-07:00",
+                "estimate":"PT2H15M",
+                "actual":""
+            },
+
+            {
+                "name":"DylanJayFox",
+                "twitch_name":"",
+                "game": "Spyro: Year of the Dragon",
+
+                "start_time":"2025-07-25T16:00:00-07:00",
+                "estimate":"PT4H30M",
+                "actual":""
+            }
+        ]
+    }
+},
+
+{
+    "team_name":"I like my team [purple] bruh",
+    "team_color":"purple",
+    "team_number": 2,
+    "finished":0,
+    "schedule": {
+        "run_order":[
+            1, 5, 8, 11,
+            12, 9, 2,
+            4, 6, 13,
+            3, 7, 10
+        ],
+        "runs": [
+            {
+                "name":"The_Needlemouse",
+                "twitch_name":"",
+                "game": "Super Mario 64",
+
+                "start_time":"2025-07-25T16:00:00-07:00",
+                "estimate":"PT1H40M",
+                "actual":""
+            },
+
+                        {
+                "name":"calumj28",
+                "twitch_name":"",
+                "game": "Super Mario Sunshine",
+
+                "start_time":"",
+                "estimate":"PT4H20M",
+                "actual":""
+            },
+
+            {
+                "name":"allegedlymarco",
+                "twitch_name":"",
+                "game": "Super Mario Galaxy",
+
+                "start_time":"",
+                "estimate":"PT5H45M",
+                "actual":""
+            },
+
+            {
+                "name":"MarvJungs",
+                "twitch_name":"",
+                "game": "Super Mario Galaxy 2",
+
+                "start_time":"",
+                "estimate":"PT9H25M",
+                "actual":""
+            },
+
+            {
+                "name":"iamnotaequitad",
+                "twitch_name":"",
+                "game": "Banjo-Kazooie",
+
+                "start_time":"",
+                "estimate":"PT2H35M",
+                "actual":""
+            },
+
+            {
+                "name":"PlayerGameSK",
+                "twitch_name":"",
+                "game": "Banjo-Tooie",
+
+                "start_time":"",
+                "estimate":"PT4H40M",
+                "actual":""
+            },
+
+            {
+                "name":"Znernicus",
+                "twitch_name":"",
+                "game": "Donkey Kong 64",
+
+                "start_time":"",
+                "estimate":"PT5H30M",
+                "actual":""
+            },
+
+            {
+                "name":"SuperSphere_",
+                "twitch_name":"",
+                "game": "Crash Bandicoot",
+
+                "start_time":"",
+                "estimate":"PT1H20M",
+                "actual":""
+            },
+
+            {
+                "name":"SuperSphere_",
+                "twitch_name":"",
+                "game": "Crash Bandicoot 2: Cortex Strikes Back",
+
+                "start_time":"",
+                "estimate":"PT1H20M",
+                "actual":""
+            },
+
+            {
+                "name":"PlayerGameSK",
+                "twitch_name":"",
+                "game": "Crash Bandicoot: WARPED",
+
+                "start_time":"",
+                "estimate":"PT2H20M",
+                "actual":""
+            },
+
+            {
+                "name":"traacee_",
+                "twitch_name":"",
+                "game": "Spyro the Dragon",
+
+                "start_time":"",
+                "estimate":"PT1H48M",
+                "actual":""
+            },
+
+            {
+                "name":"Bradley_Gam1ng",
+                "twitch_name":"",
+                "game": "Spyro 2: Ripto's Rage!",
+
+                "start_time":"",
+                "estimate":"PT1H45M",
+                "actual":""
+            },
+
+            {
+                "name":"Uroogla",
+                "twitch_name":"",
+                "game": "Spyro: Year of the Dragon",
+
+                "start_time":"",
+                "estimate":"PT4H25M",
+                "actual":""
+            }
+        ]
+    }
+},
+
+{
+    "team_name":"Put the lime (green) in the coconut",
+    "team_color":"green",
+    "team_number": 3,
+    "finished":0,
+    "schedule": {
+        "run_order":[
+            6, 5, 8, 11,
+            12, 9, 2,
+            4, 1, 13,
+            3, 7, 10
+        ],
+        "runs": [
+            {
+                "name":"Odme_",
+                "twitch_name":"",
+                "game": "Super Mario 64",
+
+                "start_time":"2025-07-26T05:55:00-07:00",
+                "estimate":"PT1H40M",
+                "actual":""
+            },
+
+            {
+                "name":"Galaxtic",
+                "twitch_name":"",
+                "game": "Super Mario Sunshine",
+
+                "start_time":"2025-07-26T02:30:00-07:00",
+                "estimate":"PT3H25M",
+                "actual":""
+            },
+
+            {
+                "name":"swagh007",
+                "twitch_name":"",
+                "game": "Super Mario Galaxy",
+
+                "start_time":"2025-07-26T09:25:00-07:00",
+                "estimate":"PT5H45M",
+                "actual":""
+            },
+
+            {
+                "name":"meowmix_fan",
+                "twitch_name":"",
+                "game": "Super Mario Galaxy 2",
+
+                "start_time":"2025-07-27T00:15:00-07:00",
+                "estimate":"PT9H40M",
+                "actual":""
+            },
+
+            {
+                "name":"beeve",
+                "twitch_name":"",
+                "game": "Banjo-Kazooie",
+
+                "start_time":"2025-07-27T09:55:00-07:00",
+                "estimate":"PT2H35M",
+                "actual":""
+            },
+
+            {
+                "name":"Candy_Boots",
+                "twitch_name":"",
+                "game": "Banjo-Tooie",
+
+                "start_time":"2025-07-26T15:10:00-07:00",
+                "estimate":"PT4H40M",
+                "actual":""
+            },
+
+            {
+                "name":"MrTKettle",
+                "twitch_name":"",
+                "game": "Donkey Kong 64",
+
+                "start_time":"2025-07-25T17:20:00-07:00",
+                "estimate":"PT5H55M",
+                "actual":""
+            },
+
+            {
+                "name":"Bregermann",
+                "twitch_name":"",
+                "game": "Crash Bandicoot",
+
+                "start_time":"2025-07-26T00:45:00-07:00",
+                "estimate":"PT1H45M",
+                "actual":""
+            },
+
+            {
+                "name":"ChaoticAether",
+                "twitch_name":"",
+                "game": "Crash Bandicoot 2: Cortex Strikes Back",
+
+                "start_time":"2025-07-25T16:00:00-07:00",
+                "estimate":"PT1H20M",
+                "actual":""
+            },
+
+            {
+                "name":"Bregermann",
+                "twitch_name":"",
+                "game": "Crash Bandicoot: WARPED",
+
+                "start_time":"2025-07-26T12:30:00-07:00",
+                "estimate":"PT3H35M",
+                "actual":""
+            },
+
+            {
+                "name":"Koolaidanman1",
+                "twitch_name":"",
+                "game": "Spyro the Dragon",
+
+                "start_time":"2025-07-25T23:15:00-07:00",
+                "estimate":"PT1H30M",
+                "actual":""
+            },
+
+            {
+                "name":"superdave2",
+                "twitch_name":"",
+                "game": "Spyro 2: Ripto's Rage!",
+
+                "start_time":"2025-07-26T07:35:00-07:00",
+                "estimate":"PT1H50M",
+                "actual":""
+            },
+
+            {
+                "name":"superdave2",
+                "twitch_name":"",
+                "game": "Spyro: Year of the Dragon",
+
+                "start_time":"2025-07-26T19:50:00-07:00",
+                "estimate":"PT4H25M",
+                "actual":""
+            }
+        ]
+    }
+}
+
+]

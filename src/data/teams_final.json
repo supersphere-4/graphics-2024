@@ -3,7 +3,7 @@
     "team_name":"Wake Me Up Before You Indigo-go",
     "team_color": "indigo",
     "team_number": 1,
-    "finished":10,
+    "finished":0,
 
     "schedule": {
         "runs": [
@@ -145,7 +145,7 @@
         "team_name":"Team Purple Flurp (from Jimmy Neutron)",
         "team_color":"purple",
         "team_number":2,
-        "finished":10,
+        "finished":0,
 
         "schedule": {
             "runs": [

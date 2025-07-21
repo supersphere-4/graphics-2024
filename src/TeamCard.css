@@ -15,13 +15,17 @@
     visibility: hidden;
 }
 
+.complete {
+    display: block;
+    filter:grayscale() !important;
+}
+
 .in-progress {
     display:block;
-    opacity:0.4;
 }
 
 .incomplete {
-    visibility: hidden;
+    filter:grayscale() brightness(0.2) !important;
 }
 
 .pronouns {
@@ -41,12 +45,8 @@
     font-size: x-small;
 }
 
-#black {
-    background: black !important;
-}
-
-#indigo {
-    background: indigo !important;
+#orange {
+    background: orange !important;
 }
 
 #purple {
@@ -57,12 +57,8 @@
     background: limegreen !important;
 }
 
-#blue {
-    background: blue !important;
-}
-
-#magenta {
-    background: magenta !important;
+#black {
+    background: black !important;
 }
 
 #sub-stream {

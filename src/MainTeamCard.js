@@ -7,18 +7,23 @@ function MainTeamCard(props) {
 
     const team = props.teams.find((team)=> {return team.team_number === props.main});
     const teamName = team.team_name;
-    const isTeamFinished = team.finished + props.runs[team.team_number - 1] == 13;
-    const currRun = Math.min(12, team.finished + props.runs[team.team_number - 1]);
-    const currGame = team.schedule.runs[currRun].data.game;
-    const currRunner = team.schedule.runs[currRun].data.name;
-    const currRunnerPronouns = props.runners.find((runner) => {return runner.name === currRunner}).pronouns;
+    const isTeamFinished = props.runs[team.team_number - 1] == 13;
+    let currRun = props.runs[team.team_number - 1];
+    if (isTeamFinished) currRun = 12;
+    const run = team.schedule.run_order.indexOf(currRun + 1)
+    
+    const currRunner = team.schedule.runs[run].name;
+
     const start = new Date(team.schedule.runs[currRun].scheduled);
     const end = new Date(start.getTime() + team.schedule.runs[currRun].length_t*1000);
-    const gameOrder = team.schedule.runs.map((run) => run.data.game);
-    games.sort((game1, game2) => gameOrder.indexOf(game1[0]) - gameOrder.indexOf(game2[0]));
-    const gamesCompleted = games.map((game) => {
+    let games_array = games
+    for (let i = 0; i < games.length; i++) {
+        games_array[i].order = team.schedule.run_order[i]
+    }
+    games_array = games_array.toSorted((game1, game2) => game1.order - game2.order)
+    const gamesCompleted = games_array.map((game) => {
             let src = "/game_logos/" + game[1] + ".png";
-            return <div><Image src={src} width="128px" className={isTeamFinished || currRun > gameOrder.indexOf(game[0]) ? "complete" : currRun == gameOrder.indexOf(game[0]) ? "in-progress" : "incomplete"}></Image></div>
+            return <div><Image src={src} width="128px" className={isTeamFinished || currRun > games_array.indexOf(game) ? "complete" : currRun == games_array.indexOf(game) ? "in-progress" : "incomplete"}></Image></div>
         }
     )
         
@@ -39,12 +44,14 @@ function MainTeamCard(props) {
     }, [time, start, end]);
 
     return (
-        <Card className="team-card main-card" style={{ width: '112rem' }}>
-            <CardHeader id={team.team_color}>
+        <Card className="team-card main-card" id={team.team_color} style={{ width: '106rem' }}>
+            <CardHeader id={"team" + team.team_number}>
                 <Container fluid>
                     <Row>
-                        <Col xs={12} className="team-name flex flex-grow">{teamName}</Col>
-                        {/* <Col s><Button size="sm" variant="warning" className="">{currRun}/13</Button></Col> */}
+                        <Col xs={12} className="team-name flex flex-grow">
+                            <Image src={"/team_logos/" + team.team_color + ".png"} width={70} height={70} className="m-2 pe-2"></Image>
+                            {teamName}
+                        </Col>
                     </Row>
                 </Container>
             </CardHeader>
