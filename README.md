@@ -1,6 +1,6 @@
-# The 8th Annual 1545 Relay Race Graphics
+# The 9th Annual 1545 Relay Race Graphics
 
-This repository is for all the stream graphics viewers will see for the 8th 1545 Relay Race (2024). If you're seeing this, you're most likely part of the tech team. Welcome!
+This repository is for all the stream graphics viewers will see for the 9th Annual 1545 Relay Race (2025). If you're seeing this, you're most likely part of the tech team. Welcome!
 
 Since this app was created in React, please read the following instructions so display the graphics on stream:
 
