@@ -153,10 +153,10 @@
     "finished":0,
     "schedule": {
         "run_order":[
-            1, 5, 8, 11,
-            12, 9, 2,
-            4, 6, 13,
-            3, 7, 10
+            7, 11, 12, 5,
+            9, 13, 1,
+            2, 10, 4,
+            6, 3, 8
         ],
         "runs": [
             {
@@ -164,7 +164,7 @@
                 "twitch_name":"",
                 "game": "Super Mario 64",
 
-                "start_time":"2025-07-25T16:00:00-07:00",
+                "start_time":"2025-07-26T14:10:00-07:00",
                 "estimate":"PT1H40M",
                 "actual":""
             },
@@ -174,7 +174,7 @@
                 "twitch_name":"",
                 "game": "Super Mario Sunshine",
 
-                "start_time":"",
+                "start_time":"2025-07-27T00:10:00-07:00",
                 "estimate":"PT4H20M",
                 "actual":""
             },
@@ -184,7 +184,7 @@
                 "twitch_name":"",
                 "game": "Super Mario Galaxy",
 
-                "start_time":"",
+                "start_time":"2025-07-27T04:30:00-07:00",
                 "estimate":"PT5H45M",
                 "actual":""
             },
@@ -194,7 +194,7 @@
                 "twitch_name":"",
                 "game": "Super Mario Galaxy 2",
 
-                "start_time":"",
+                "start_time":"2025-07-26T02:55:00-07:00",
                 "estimate":"PT9H25M",
                 "actual":""
             },
@@ -204,7 +204,7 @@
                 "twitch_name":"",
                 "game": "Banjo-Kazooie",
 
-                "start_time":"",
+                "start_time":"2025-07-26T20:15:00-07:00",
                 "estimate":"PT2H35M",
                 "actual":""
             },
@@ -214,8 +214,8 @@
                 "twitch_name":"",
                 "game": "Banjo-Tooie",
 
-                "start_time":"",
-                "estimate":"PT4H40M",
+                "start_time":"2025-07-27T10:15:00-07:00",
+                "estimate":"PT5H40M",
                 "actual":""
             },
 
@@ -224,7 +224,7 @@
                 "twitch_name":"",
                 "game": "Donkey Kong 64",
 
-                "start_time":"",
+                "start_time":"2025-07-25T16:00:00-07:00",
                 "estimate":"PT5H30M",
                 "actual":""
             },
@@ -234,7 +234,7 @@
                 "twitch_name":"",
                 "game": "Crash Bandicoot",
 
-                "start_time":"",
+                "start_time":"2025-07-25T21:30:00-07:00",
                 "estimate":"PT1H20M",
                 "actual":""
             },
@@ -244,7 +244,7 @@
                 "twitch_name":"",
                 "game": "Crash Bandicoot 2: Cortex Strikes Back",
 
-                "start_time":"",
+                "start_time":"2025-07-26T22:50:00-07:00",
                 "estimate":"PT1H20M",
                 "actual":""
             },
@@ -254,7 +254,7 @@
                 "twitch_name":"",
                 "game": "Crash Bandicoot: WARPED",
 
-                "start_time":"",
+                "start_time":"2025-07-26T00:35:00-07:00",
                 "estimate":"PT2H20M",
                 "actual":""
             },
@@ -264,8 +264,8 @@
                 "twitch_name":"",
                 "game": "Spyro the Dragon",
 
-                "start_time":"",
-                "estimate":"PT1H48M",
+                "start_time":"2025-07-26T12:20:00-07:00",
+                "estimate":"PT1H50M",
                 "actual":""
             },
 
@@ -274,7 +274,7 @@
                 "twitch_name":"",
                 "game": "Spyro 2: Ripto's Rage!",
 
-                "start_time":"",
+                "start_time":"2025-07-25T22:50:00-07:00",
                 "estimate":"PT1H45M",
                 "actual":""
             },
@@ -284,7 +284,7 @@
                 "twitch_name":"",
                 "game": "Spyro: Year of the Dragon",
 
-                "start_time":"",
+                "start_time":"2025-07-26T15:50:00-07:00",
                 "estimate":"PT4H25M",
                 "actual":""
             }
