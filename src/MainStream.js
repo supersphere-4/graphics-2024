@@ -13,7 +13,7 @@ function MainStream(props) {
     const src = "https://player.twitch.tv/?channel=" + currRunner + "&parent=localhost";
 
     return (
-        <Col className=""><iframe className={"team" + team.team_number} src={src} width="1520px" height="855px"></iframe></Col>
+        <Col className=""><iframe className={"team" + team.team_number} src={src} width="1280px" height="720px"></iframe></Col>
     )
 }
 

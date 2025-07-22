@@ -124,18 +124,14 @@ function App(props) {
                 </Col>
             </Row>
             <Row className="my-4">
-                <Col xs={9}>
+                <Col fluid>
                     <MainStream teams={teams} runners={runnerinfo} main={main} runs={runsCompleted}/>
                 </Col>
-            </Row>
-            <Row className="mt-4">
-                <Col xs={6}></Col>
-                <Col>
+                <Col fluid>
                     <Stream teams={teams} runners={runnerinfo} main={main} runs={runsCompleted}/>
                 </Col>
             </Row>
             <Row className="my-4">
-                <Col></Col>
                 <Col xs={9}>
                     <MainTeamCard teams={teams} runners={runnerinfo} main={main} runs={runsCompleted}></MainTeamCard>
                 </Col>
