@@ -10,7 +10,7 @@ function SubStream(props) {
     const src = "https://player.twitch.tv/?channel=" + currRunner + "&parent=localhost&muted=true";
 
     return (
-        <iframe src={src} width="240px" height="135px" className={"team" + props.team.team_number + ' m-4'}/>
+        <iframe src={src} width="480px" height="270px" className={"team" + props.team.team_number + ' m-4'}/>
     );
 }
 
