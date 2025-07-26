@@ -30,7 +30,7 @@
 
                 "start_time":"2025-07-26T01:30:00-07:52",
                 "estimate":"PT3H40M",
-                "actual":""
+                "actual":"PT3H45M"
             },
 
             {
@@ -412,7 +412,7 @@
 
                 "start_time":"2025-07-26T05:27:00-07:00",
                 "estimate":"PT1H30M",
-                "actual":""
+                "actual":"PT1H29M"
             },
 
             {
@@ -420,7 +420,7 @@
                 "twitch_name":"",
                 "game": "Spyro 2: Ripto's Rage!",
 
-                "start_time":"2025-07-26T07:35:00-07:52",
+                "start_time":"2025-07-26T06:56:00-07:00",
                 "estimate":"PT1H50M",
                 "actual":""
             },
