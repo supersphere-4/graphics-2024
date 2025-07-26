@@ -196,7 +196,7 @@
 
                 "start_time":"2025-07-26T03:33:00-07:00",
                 "estimate":"PT9H25M",
-                "actual":""
+                "actual":"PT9H22M"
             },
 
             {
@@ -264,7 +264,7 @@
                 "twitch_name":"",
                 "game": "Spyro the Dragon",
 
-                "start_time":"2025-07-26T12:20:00-07:52",
+                "start_time":"2025-07-26T12:55:00-07:00",
                 "estimate":"PT1H50M",
                 "actual":""
             },
