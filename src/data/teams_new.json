@@ -330,7 +330,7 @@
                 "twitch_name":"",
                 "game": "Super Mario Galaxy",
 
-                "start_time":"2025-07-26T09:25:00-07:52",
+                "start_time":"2025-07-26T13:22:00-07:00",
                 "estimate":"PT5H45M",
                 "actual":""
             },
@@ -362,7 +362,7 @@
 
                 "start_time":"2025-07-26T08:43:00-07:00",
                 "estimate":"PT4H40M",
-                "actual":""
+                "actual":"PT4H38M"
             },
 
             {
