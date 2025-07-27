@@ -15,7 +15,7 @@ function App(props) {
     const [main, setMain] = useState(1);
     const [runsCompleted, setRunsCompleted] = useState(teams.map((team) => team.finished));
 
-    const minutes = 12;
+    const minutes = 0.1;
 
     function refreshStream(team, main) {
         const currRun = runsCompleted[team.team_number - 1] + 1;
@@ -97,16 +97,16 @@ function App(props) {
         return () => {
             clearInterval(interval);
             let newMain = (time) % runsCompleted.length + 1;
-            if (runsCompleted.filter((run) => run < 13).length > 1) {
-                setMain((time) % runsCompleted.length + 1);
-            }
             if (runsCompleted[newMain - 1] >= 13) {
-                let i = 1;
+                let i = 0;
                 while (runsCompleted[newMain - 1] >= 13) {
                     if (i > 10) break;
                     setMain((time + i) % runsCompleted.length + 1);
                     i++;
                 }
+            }
+            if (runsCompleted[newMain - 1] >= 13) {
+                getNewMain();
             }
         };
     }, [time])
