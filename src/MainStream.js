@@ -9,7 +9,7 @@ function MainStream(props) {
     let currRun = props.runs[team.team_number - 1];
     if (isTeamFinished) currRun = 12;
     const run = team.schedule.run_order.indexOf(currRun + 1)
-    const currRunner = team.schedule.runs[run].name;
+    const currRunner = (team.schedule.runs[run].twitch_name !== "" ? team.schedule.runs[run].twitch_name : team.schedule.runs[run].name);
     const src = "https://player.twitch.tv/?channel=" + currRunner + "&parent=localhost";
 
     return (

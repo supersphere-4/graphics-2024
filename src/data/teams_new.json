@@ -15,10 +15,10 @@
         "runs": [
             {
                 "name":"druzspeedruns",
-                "twitch_name":"",
+                "twitch_name":"zurdsky",
                 "game": "Super Mario 64",
 
-                "start_time":"2025-07-26T18:02:00-07:00",
+                "start_time":"2025-07-26T19:00:00-07:00",
                 "estimate":"PT1H55M",
                 "actual":""
             },
@@ -204,7 +204,7 @@
                 "twitch_name":"",
                 "game": "Banjo-Kazooie",
 
-                "start_time":"2025-07-26T20:43:00-07:00",
+                "start_time":"2025-07-26T20:34:00-07:00",
                 "estimate":"PT2H35M",
                 "actual":""
             },
