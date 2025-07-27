@@ -97,16 +97,16 @@ function App(props) {
         return () => {
             clearInterval(interval);
             let newMain = (time) % runsCompleted.length + 1;
-            if (runsCompleted.filter((run) => run < 13).length > 1) {
-                setMain((time) % runsCompleted.length + 1);
-            }
             if (runsCompleted[newMain - 1] >= 13) {
-                let i = 1;
+                let i = 0;
                 while (runsCompleted[newMain - 1] >= 13) {
                     if (i > 10) break;
                     setMain((time + i) % runsCompleted.length + 1);
                     i++;
                 }
+            }
+            if (runsCompleted[newMain - 1] >= 13) {
+                getNewMain();
             }
         };
     }, [time])
