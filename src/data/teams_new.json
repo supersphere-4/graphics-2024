@@ -246,7 +246,7 @@
 
                 "start_time":"2025-07-27T01:46:00-07:00",
                 "estimate":"PT1H20M",
-                "actual":""
+                "actual":"PT1H18M"
             },
 
             {
@@ -400,7 +400,7 @@
                 "twitch_name":"",
                 "game": "Crash Bandicoot: WARPED",
 
-                "start_time":"2025-07-26T13:27:00-07:00",
+                "start_time":"2025-07-26T13:07:00-07:00",
                 "estimate":"PT3H35M",
                 "actual":""
             },
