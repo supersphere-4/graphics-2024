@@ -3,17 +3,10 @@ import './MainStream.css'
 
 function MainStream(props) {
 
-    const main = props.main;
-    const team = props.teams.find((team) => team.team_number === main);
-    const isTeamFinished = props.runs[team.team_number - 1] == 13;
-    let currRun = props.runs[team.team_number - 1];
-    if (isTeamFinished) currRun = 12;
-    const run = team.schedule.run_order.indexOf(currRun + 1)
-    const currRunner = (team.schedule.runs[run].twitch_name !== "" ? team.schedule.runs[run].twitch_name : team.schedule.runs[run].name);
-    const src = "https://player.twitch.tv/?channel=" + currRunner + "&parent=localhost";
+    const src = "https://player.twitch.tv/?channel=" + "SuperSphere_" + "&parent=localhost&muted=true";
 
     return (
-        <Col className=""><iframe className={"team" + team.team_number} src={src} width="1280px" height="720px"></iframe></Col>
+        <Col className=""><div className="peach"><iframe className={"team"} src={src} width="100%" height="100%"></iframe></div></Col>
     )
 }
 

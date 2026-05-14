@@ -1,0 +1,44 @@
+iframe {
+
+    
+}
+
+div {
+    width: 800px;
+    height: 450px;
+    position: absolute;
+    right:5px;
+    top:5px;
+}
+
+.rust {
+    border: 5px solid #592104;
+}
+
+.purple {
+    border: 5px solid purple;
+}
+
+.red {
+    border: 5px solid red;
+}
+
+.peach {
+    border: 5px solid peachpuff;
+}
+
+.mint {
+    border: 5px solid palegreen;
+}
+
+.pink {
+    border: 5px solid hotpink;
+}
+
+.cyan {
+    border: 5px solid cyan;
+}
+
+.gold {
+    border: 5px solid gold;
+}
